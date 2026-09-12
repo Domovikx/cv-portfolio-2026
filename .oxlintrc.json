@@ -1,0 +1,14 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["react", "react_perf", "typescript", "oxc", "jsx-a11y", "import"],
+  "categories": {
+    "correctness": "error",
+    "perf": "warn"
+  },
+  "rules": {
+    "react/rules-of-hooks": "error",
+    "react/only-export-components": ["warn", { "allowConstantExport": true }],
+    "react_perf/jsx-no-new-function-as-prop": "off"
+  },
+  "ignorePatterns": ["dist", "node_modules", "coverage"]
+}

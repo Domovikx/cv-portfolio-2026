@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "oxc.oxlint",
+    "esbenp.prettier-vscode",
+    "streetsidesoftware.code-spell-checker",
+    "streetsidesoftware.code-spell-checker-russian",
+    "ZixuanChen.vitest-explorer"
+  ]
+}

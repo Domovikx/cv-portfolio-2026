@@ -1,0 +1,73 @@
+.timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-left: 28px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  left: 6px;
+  width: 2px;
+  background-color: #e3e3e3;
+}
+
+.item {
+  position: relative;
+}
+
+.item::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: -28px;
+  width: 14px;
+  height: 14px;
+  border: 3px solid var(--alfa-bg-gray);
+  border-radius: 50%;
+  background-color: var(--alfa-red);
+  box-shadow: 0 0 0 2px var(--alfa-red);
+}
+
+.period {
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--alfa-red);
+}
+
+.role {
+  margin-top: 8px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.company {
+  margin-top: 4px;
+  font-size: 15px;
+  color: #666;
+}
+
+.text {
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.smallChip {
+  padding: 6px 12px;
+  font-size: 13px;
+}

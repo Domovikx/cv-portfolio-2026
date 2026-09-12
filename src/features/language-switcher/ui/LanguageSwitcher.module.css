@@ -1,0 +1,32 @@
+.switcher {
+  display: inline-flex;
+  overflow: hidden;
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+  background-color: var(--alfa-white);
+}
+
+.item {
+  padding: 8px 12px;
+  border: none;
+  background-color: transparent;
+  color: var(--alfa-dark);
+  font-size: 14px;
+  font-weight: 700;
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast);
+}
+
+.item:hover {
+  color: var(--alfa-red);
+}
+
+.active {
+  background-color: var(--alfa-dark);
+  color: var(--alfa-white);
+}
+
+.active:hover {
+  color: var(--alfa-white);
+}

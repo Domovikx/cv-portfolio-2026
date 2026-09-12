@@ -1,0 +1,39 @@
+import { useTranslation } from 'react-i18next'
+
+import { Button, Chip, Container } from '@/shared/ui'
+
+import styles from './Hero.module.css'
+
+export function Hero() {
+  const { t } = useTranslation()
+  const chips = t('hero.chips', { returnObjects: true }) as string[]
+
+  return (
+    <section id="top" className={styles.hero}>
+      <div className={styles.blobs} aria-hidden="true">
+        <div className={styles.blobPurple} />
+        <div className={styles.blobRed} />
+      </div>
+      <Container className={styles.content}>
+        <p className={styles.greeting}>{t('hero.greeting')}</p>
+        <h1 className={styles.title}>
+          {t('hero.roleMain')} <span className={styles.titleAccent}>{t('hero.roleAccent')}</span>
+        </h1>
+        <p className={styles.subtitle}>{t('hero.subtitle')}</p>
+        <div className={styles.chips}>
+          {chips.map((chip) => (
+            <Chip key={chip}>{chip}</Chip>
+          ))}
+        </div>
+        <div className={styles.actions}>
+          <Button href="#contacts" size="l">
+            {t('hero.ctaPrimary')}
+          </Button>
+          <Button href="#projects" variant="ghost" size="l">
+            {t('hero.ctaSecondary')}
+          </Button>
+        </div>
+      </Container>
+    </section>
+  )
+}

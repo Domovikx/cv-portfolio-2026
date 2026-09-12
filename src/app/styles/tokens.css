@@ -1,0 +1,27 @@
+:root {
+  /* Палитра — визуальный язык job.alfabank.ru (без брендовых элементов) */
+  --alfa-red: #ef3124;
+  --alfa-red-hover: #d92b20;
+  --alfa-purple: #d46dfa;
+  --alfa-dark: #2c2c2c;
+  --alfa-gray: #d9d9d9;
+  --alfa-bg-gray: #f5f7f9;
+  --alfa-bg: #f5f5f5;
+  --alfa-white: #ffffff;
+
+  /* Типографика */
+  --font-heading: 'Montserrat', 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'Segoe UI', system-ui, -apple-system, sans-serif;
+
+  /* Скругления */
+  --radius-card: 24px;
+  --radius-chip: 8px;
+  --radius-btn: 4px;
+
+  /* Сетка */
+  --container-width: 1216px;
+
+  /* Эффекты */
+  --shadow-card: 0 12px 32px rgba(44, 44, 44, 0.08);
+  --transition-fast: 0.2s ease;
+}

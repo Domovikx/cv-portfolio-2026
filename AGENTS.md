@@ -1,0 +1,60 @@
+# cv-portfolio-2026 — CV-портфолио фронтенд-разработчика
+
+## Правила для AI-агента
+
+- **НИКОГДА не коммитить и не пушить без явного разрешения пользователя.**
+- Не использовать брендовые элементы Альфа-Банка (логотип, шрифтовые знаки).
+  Разрешён визуальный язык: палитра, скругления, анимации, сетка.
+- Русский язык — источник истины для контента; `locales/ru.json` и
+  `locales/en.json` должны иметь одинаковый набор ключей (проверяется тестами
+  `tests/tools/i18n-parity.test.ts`).
+- Контент CV — в entities (`src/entities/`), тексты — в `locales/`.
+  Ключи i18n из данных проверяются тестом `tests/tools/data.test.ts`.
+
+## Стек
+
+- React 19 + TypeScript 6 (strict) + Vite 8
+- Линтинг: oxlint (`npm run lint`), формат: Prettier 3 (`npm run format`)
+- Архитектура: Feature-Sliced Design, проверка через steiger (`npm run fsd:check`)
+- Тесты: Vitest + React Testing Library + jsdom (`npm test`)
+- i18n: react-i18next, ru/en, переключатель в шапке
+- Стили: CSS Modules + дизайн-токены (`src/app/styles/tokens.css`), микро-UI-kit (`src/shared/ui`)
+
+## Структура (FSD)
+
+```
+src/
+  app/        провайдеры, глобальные стили, точка входа
+  pages/      страницы (home)
+  widgets/    блоки страницы: header, hero, about, stack, experience, projects, contacts, footer
+  features/   сценарии: language-switcher
+  entities/   данные CV: profile, skill, experience, project
+  shared/     config (i18n, site), lib (cn), ui (Button, Chip, Card, Container, Section, SectionTitle)
+locales/      ru.json (источник истины), en.json
+tests/        tests/components (рендер), tests/tools (интегритет данных и переводов)
+```
+
+Импорт между слоями только вниз: app → pages → widgets → features → entities → shared.
+Public API модуля — только через `index.ts`.
+
+## Команды
+
+```bash
+npm run dev          # dev-сервер
+npm run check        # lint + format:check + fsd:check + test + build
+npm run fsd:check    # проверка архитектуры FSD
+npm test             # тесты (Vitest)
+npm run deploy       # локальный деплой на gh-pages ветку
+```
+
+## Деплой
+
+GitHub Actions (`.github/workflows/deploy.yml`) собирает и публикует на
+GitHub Pages при пуше в main. Итоговая ссылка:
+https://domovikx.github.io/cv-portfolio-2026/
+
+## Данные
+
+Git: DomovikX / domovikx@gmail.com. Реальные ссылки на проекты — в
+`src/entities/project/model/projects.ts`. Если добавил новый ключ перевода —
+он должен появиться в ОБОИХ локалях, иначе упадёт тест parity.

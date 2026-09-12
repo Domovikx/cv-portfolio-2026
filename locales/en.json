@@ -1,0 +1,133 @@
+{
+  "header": {
+    "nav": {
+      "about": "About",
+      "stack": "Stack",
+      "experience": "Experience",
+      "projects": "Projects",
+      "contacts": "Contacts"
+    },
+    "cta": "Contact me"
+  },
+  "hero": {
+    "greeting": "Hi, I'm DomovikX —",
+    "roleMain": "Frontend Developer",
+    "roleAccent": "(React + Angular)",
+    "subtitle": "A developer who loves frontend, design systems and clean code. I work with React and Angular, building complex forms, tables and filters. This site is a living portfolio: Feature-Sliced Design, design tokens, a micro UI-kit, i18n, tests and deployment via GitHub Actions.",
+    "chips": ["React", "Angular", "TypeScript", "Vite", "Feature-Sliced Design"],
+    "ctaPrimary": "Contact me",
+    "ctaSecondary": "See projects"
+  },
+  "about": {
+    "title": "The best frontend is built with best practices",
+    "text": "Frontend for me is not only code, but also architecture, tests and attention to UI details. Everything in this project is real: a working design system, strict linting and architecture checks.",
+    "cards": [
+      {
+        "title": "Innovation is my job",
+        "text": "Up-to-date stack: React 19, Vite, TypeScript. I follow releases and adopt the best."
+      },
+      {
+        "title": "Care about quality",
+        "text": "Linting, formatting, unit and component tests. Code must be clear and reliable."
+      },
+      {
+        "title": "Architecture in your hands",
+        "text": "Feature-Sliced Design, explicit module public APIs, reusable components."
+      },
+      {
+        "title": "AI at work",
+        "text": "I use AI tools in development, prototyping and testing."
+      }
+    ]
+  },
+  "stack": {
+    "title": "My stack",
+    "subtitle": "What I know and work with",
+    "groups": {
+      "frameworks": "Frameworks",
+      "languages": "Languages & markup",
+      "integrations": "Integrations",
+      "tools": "Tools",
+      "ai": "AI tools"
+    }
+  },
+  "experience": {
+    "title": "What I do",
+    "subtitle": "Experience and key milestones",
+    "items": [
+      {
+        "period": "2020 — 2021",
+        "role": "Learning JavaScript, Andersen course",
+        "company": "Andersen JS Course",
+        "text": "Intensive JavaScript: data structures, async, DOM, React basics. First test assignments: CRM on Vue + Firebase (diploma), a shop on React, an attention game.",
+        "tags": ["JavaScript", "React", "Vue", "Firebase"]
+      },
+      {
+        "period": "2021 — 2023",
+        "role": "Frontend developer (self-study)",
+        "company": "Pet projects and coursework",
+        "text": "Test assignments and study projects: a React app with a Firebase backend, an Angular 8 coursework with routing and layout. Passed Rolling Scopes School.",
+        "tags": ["React", "Angular", "TypeScript"]
+      },
+      {
+        "period": "2023 — 2026",
+        "role": "Interfaces and AI tools",
+        "company": "Pet projects, open source",
+        "text": "Game localization and AI voice-over (Ren'Py, Qwen voice cloning, ~67k lines), Python automation tools, development with opencode and local LLMs.",
+        "tags": ["AI", "TTS", "Python", "Ren'Py", "opencode"]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Things you can touch",
+    "items": [
+      {
+        "title": "vue_crm — CRM in Vue",
+        "text": "Diploma project: auth, complex forms, tables, filters, validation, CRUD. Vuex + Vuetify + Firebase.",
+        "tags": ["Vue", "Vuex", "Vuetify", "Firebase"]
+      },
+      {
+        "title": "angular-nabludenie-by",
+        "text": "Angular 8 coursework: routing, layout, data handling. Hosted on GitHub Pages.",
+        "tags": ["Angular", "TypeScript", "GitHub Pages"]
+      },
+      {
+        "title": "react-todo-list",
+        "text": "First React work: todo app with state management, published on GitHub Pages.",
+        "tags": ["React", "JavaScript"]
+      },
+      {
+        "title": "react_tz_2021",
+        "text": "React test assignment: integration with a REST backend, deployed to Firebase Hosting.",
+        "tags": ["React", "REST API", "Firebase"]
+      },
+      {
+        "title": "react_maze",
+        "text": "Test assignment: an attention training game with step-by-step maze navigation.",
+        "tags": ["React", "Game"]
+      },
+      {
+        "title": "The Survival of Sarah Rose",
+        "text": "Russian game translation and full AI voice-over of ~67k lines: generation tools, cataloging, audio cleanup.",
+        "tags": ["Ren'Py", "Python", "AI", "TTS"]
+      }
+    ]
+  },
+  "contacts": {
+    "title": "Contact me",
+    "text": "I respond to Frontend Developer (React + Angular) vacancies. Open to remote or hybrid work, ready to discuss complex forms, tables and internal systems.",
+    "availability": "Open to offers",
+    "emailCta": "Email me",
+    "githubCta": "GitHub",
+    "resumeCta": "Download resume (PDF)"
+  },
+  "footer": {
+    "copyright": "© 2026 DomovikX",
+    "madeWith": "React 19 · Vite · TypeScript · Feature-Sliced Design"
+  },
+  "profile": {
+    "role": "Frontend Developer (React + Angular)",
+    "location": "Remote / hybrid"
+  }
+}

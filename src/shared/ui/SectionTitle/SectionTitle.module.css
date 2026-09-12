@@ -1,0 +1,29 @@
+.wrapper {
+  max-width: 750px;
+  margin-bottom: 48px;
+}
+
+.title {
+  position: relative;
+  padding-bottom: 20px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 48px;
+  height: 4px;
+  background-color: var(--alfa-red);
+}
+
+.subtitle {
+  margin-top: 16px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #555;
+}

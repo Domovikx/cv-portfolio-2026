@@ -1,0 +1,133 @@
+{
+  "header": {
+    "nav": {
+      "about": "Обо мне",
+      "stack": "Стек",
+      "experience": "Опыт",
+      "projects": "Проекты",
+      "contacts": "Контакты"
+    },
+    "cta": "Связаться"
+  },
+  "hero": {
+    "greeting": "Привет, я DomovikX —",
+    "roleMain": "Frontend-разработчик",
+    "roleAccent": "(React + Angular)",
+    "subtitle": "Разработчик, который любит фронтенд, дизайн-системы и аккуратный код. Работаю с React и Angular, строю сложные формы, таблицы и фильтры. Этот сайт — живое портфолио: Feature-Sliced Design, дизайн-токены, микро-UI-kit, i18n, тесты и деплой через GitHub Actions.",
+    "chips": ["React", "Angular", "TypeScript", "Vite", "Feature-Sliced Design"],
+    "ctaPrimary": "Связаться",
+    "ctaSecondary": "Смотреть проекты"
+  },
+  "about": {
+    "title": "Лучший фронтенд делают лучшие практики",
+    "text": "Frontend для меня — это не только код, но и архитектура, тесты и внимание к деталям интерфейса. В этом проекте всё по-настоящему: рабочая дизайн-система, строгий линтинг и проверка архитектуры.",
+    "cards": [
+      {
+        "title": "Инновации — моя работа",
+        "text": "Актуальный стек: React 19, Vite, TypeScript. Слежу за релизами и внедряю лучшее."
+      },
+      {
+        "title": "Забота о качестве",
+        "text": "Линтинг, форматирование, unit- и component-тесты. Код должен быть понятным и надёжным."
+      },
+      {
+        "title": "Архитектура в твоих руках",
+        "text": "Feature-Sliced Design, явные public API модулей, переиспользуемые компоненты."
+      },
+      {
+        "title": "AI в работе",
+        "text": "Использую AI-инструменты в разработке, прототипировании и тестировании."
+      }
+    ]
+  },
+  "stack": {
+    "title": "Мой стек",
+    "subtitle": "Что умею и с чем работаю",
+    "groups": {
+      "frameworks": "Фреймворки",
+      "languages": "Языки и вёрстка",
+      "integrations": "Интеграции",
+      "tools": "Инструменты",
+      "ai": "AI-инструменты"
+    }
+  },
+  "experience": {
+    "title": "Чем я занимаюсь",
+    "subtitle": "Опыт и ключевые этапы",
+    "items": [
+      {
+        "period": "2020 — 2021",
+        "role": "Изучение JavaScript, курс Andersen",
+        "company": "Andersen JS Course",
+        "text": "Интенсив по JavaScript: структуры данных, async, DOM, основы React. Первые тестовые задания: CRM на Vue + Firebase (диплом), магазин на React, игра на развитие внимания.",
+        "tags": ["JavaScript", "React", "Vue", "Firebase"]
+      },
+      {
+        "period": "2021 — 2023",
+        "role": "Frontend-разработчик (self-study)",
+        "company": "Pet-проекты и курсовая",
+        "text": "Тестовые задания и учебные проекты: приложение на React с Firebase-бэкендом, курсовая на Angular 8 с роутингом и вёрсткой. Прошёл Rolling Scopes School.",
+        "tags": ["React", "Angular", "TypeScript"]
+      },
+      {
+        "period": "2023 — 2026",
+        "role": "Интерфейсы и AI-инструменты",
+        "company": "Pet-проекты, open source",
+        "text": "Локализация и AI-озвучка игры (Ren'Py, Qwen voice cloning, ~67 тыс. реплик), инструменты автоматизации на Python, разработка с помощью opencode и локальных LLM.",
+        "tags": ["AI", "TTS", "Python", "Ren'Py", "opencode"]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Проекты",
+    "subtitle": "То, что можно потрогать",
+    "items": [
+      {
+        "title": "vue_crm — CRM на Vue",
+        "text": "Дипломный проект: авторизация, сложные формы, таблицы, фильтры, валидация, CRUD. Vuex + Vuetify + Firebase.",
+        "tags": ["Vue", "Vuex", "Vuetify", "Firebase"]
+      },
+      {
+        "title": "angular-nabludenie-by",
+        "text": "Курсовой проект на Angular 8: роутинг, вёрстка, работа с данными. Размещён на GitHub Pages.",
+        "tags": ["Angular", "TypeScript", "GitHub Pages"]
+      },
+      {
+        "title": "react-todo-list",
+        "text": "Первая работа на React: todo-приложение с хранением состояния, опубликовано на GitHub Pages.",
+        "tags": ["React", "JavaScript"]
+      },
+      {
+        "title": "react_tz_2021",
+        "text": "Тестовое задание на React: интеграция с REST-бэкендом, развёрнуто на Firebase Hosting.",
+        "tags": ["React", "REST API", "Firebase"]
+      },
+      {
+        "title": "react_maze",
+        "text": "Тестовое задание: игра на развитие внимания с пошаговой навигацией по лабиринту.",
+        "tags": ["React", "Game"]
+      },
+      {
+        "title": "The Survival of Sarah Rose",
+        "text": "Русский перевод игры и полная AI-озвучка ~67 тыс. реплик: инструменты генерации, каталогизация, чистка аудио.",
+        "tags": ["Ren'Py", "Python", "AI", "TTS"]
+      }
+    ]
+  },
+  "contacts": {
+    "title": "Связаться",
+    "text": "Откликаюсь на вакансии фронтенд-разработчика (React + Angular). Готов к удалёнке или гибриду, обсуждению сложных форм, таблиц и внутренних систем.",
+    "availability": "Открыт к предложениям",
+    "emailCta": "Написать на почту",
+    "githubCta": "GitHub",
+    "resumeCta": "Скачать резюме (PDF)"
+  },
+  "footer": {
+    "copyright": "© 2026 DomovikX",
+    "madeWith": "React 19 · Vite · TypeScript · Feature-Sliced Design"
+  },
+  "profile": {
+    "role": "Frontend-разработчик (React + Angular)",
+    "location": "Удалённо / гибрид"
+  }
+}

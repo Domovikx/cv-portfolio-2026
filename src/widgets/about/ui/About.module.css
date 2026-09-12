@@ -1,0 +1,41 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.cardTitle {
+  position: relative;
+  padding-top: 14px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.cardTitle::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 4px;
+  background-color: var(--alfa-red);
+}
+
+.cardText {
+  margin-top: 12px;
+  font-size: 15px;
+  line-height: 22px;
+  color: #555;
+}
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
