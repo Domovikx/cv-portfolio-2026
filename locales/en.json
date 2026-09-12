@@ -10,17 +10,19 @@
     "cta": "Contact me"
   },
   "hero": {
-    "greeting": "Hi, I'm DomovikX —",
+    "greeting": "Hi, I'm Ilya Ivanovsky —",
     "roleMain": "Frontend Developer",
     "roleAccent": "(React + Angular)",
     "subtitle": "A developer who loves frontend, design systems and clean code. I work with React and Angular, building complex forms, tables and filters. This site is a living portfolio: Feature-Sliced Design, design tokens, a micro UI-kit, i18n, tests and deployment via GitHub Actions.",
     "chips": ["React", "Angular", "TypeScript", "Vite", "Feature-Sliced Design"],
+    "photoAlt": "Portrait of Ilya Ivanovsky — Frontend Developer (React + Angular)",
     "ctaPrimary": "Contact me",
     "ctaSecondary": "See projects"
   },
   "about": {
     "title": "The best frontend is built with best practices",
     "text": "Frontend for me is not only code, but also architecture, tests and attention to UI details. Everything in this project is real: a working design system, strict linting and architecture checks.",
+    "photoAlt": "Portrait of DomovikX",
     "cards": [
       {
         "title": "Innovation is my job",
@@ -123,7 +125,7 @@
     "resumeCta": "Download resume (PDF)"
   },
   "footer": {
-    "copyright": "© 2026 DomovikX",
+    "copyright": "© 2026 Ilya Ivanovsky",
     "madeWith": "React 19 · Vite · TypeScript · Feature-Sliced Design"
   },
   "profile": {

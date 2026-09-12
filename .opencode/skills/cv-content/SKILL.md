@@ -31,6 +31,8 @@ npm run check
 
 Имя/контакты: `src/entities/profile/model/profile.ts`:
 
+- `name`: Илья Ивановский (display name — выводится в UI)
+- `fullName`: Ивановский Илья Петрович (для официальных документов/PDF)
 - `email`: domovikx@gmail.com
 - `github`: https://github.com/DomovikX
 - `resumeUrl`: замени `#` на реальную ссылку на PDF-резюме

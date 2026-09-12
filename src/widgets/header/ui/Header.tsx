@@ -15,7 +15,7 @@ export function Header() {
     <header className={styles.header}>
       <Container className={styles.inner}>
         <a href="#top" className={styles.logo}>
-          <span className={styles.logoMark}>D</span>
+          <span className={styles.logoMark}>И</span>
           <span>{profile.name}</span>
         </a>
         <nav className={styles.nav} aria-label="Main">

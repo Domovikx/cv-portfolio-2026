@@ -24,7 +24,12 @@ export function Contacts() {
           <Button href={profile.github} variant="ghost" size="l" target="_blank" rel="noreferrer">
             {t('contacts.githubCta')}
           </Button>
-          <Button href={profile.resumeUrl} variant="white" size="l">
+          <Button
+            href={profile.resumeUrl}
+            variant="white"
+            size="l"
+            download="Ivanovsky-Ilya-resume.pdf"
+          >
             {t('contacts.resumeCta')}
           </Button>
         </div>

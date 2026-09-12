@@ -55,6 +55,14 @@ https://domovikx.github.io/cv-portfolio-2026/
 
 ## Данные
 
+Имя: Илья Ивановский (полное ФИО — в `profile.fullName`, в UI не выводится).
 Git: DomovikX / domovikx@gmail.com. Реальные ссылки на проекты — в
 `src/entities/project/model/projects.ts`. Если добавил новый ключ перевода —
 он должен появиться в ОБОИХ локалях, иначе упадёт тест parity.
+
+## PDF-резюме
+
+`src/entities/profile/model/resume.pdf` — генерируется скриптом
+`tools/make_resume_pdf.py` (fpdf2, кириллица через Arial). После правки
+контента CV перегенерируй: `python tools/make_resume_pdf.py` (нужен
+`python -m pip install fpdf2`).

@@ -17,6 +17,7 @@ describe('HomePage', () => {
   it('renders hero role heading', () => {
     renderHome()
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Frontend-разработчик')
+    expect(screen.getByText('Илья Ивановский')).toBeInTheDocument()
   })
 
   it('renders header nav with all section anchors', () => {
@@ -45,6 +46,13 @@ describe('HomePage', () => {
   it('renders project cards with links to GitHub', () => {
     renderHome()
     expect(screen.getAllByRole('link', { name: 'GitHub' }).length).toBeGreaterThanOrEqual(6)
+  })
+
+  it('resume button downloads a PDF', () => {
+    renderHome()
+    const resumeLink = screen.getByRole('link', { name: 'Скачать резюме (PDF)' })
+    expect(resumeLink).toHaveAttribute('download')
+    expect(resumeLink).toHaveAttribute('href', expect.stringContaining('.pdf'))
   })
 
   it('switches language to English and back', async () => {

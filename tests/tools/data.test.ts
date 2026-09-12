@@ -21,8 +21,11 @@ function getByPath(source: unknown, path: string): unknown {
 describe('CV data integrity (данные ↔ переводы)', () => {
   it('profile has name, email and links', () => {
     expect(profile.name).toBeTruthy()
+    expect(profile.fullName).toContain('Илья')
+    expect(profile.fullName).toContain('Ивановский')
     expect(profile.email).toMatch(/@/)
     expect(profile.github).toMatch(/^https:\/\//)
+    expect(profile.resumeUrl).toMatch(/\.pdf/)
     expect(typeof getByPath(ru, profile.roleKey)).toBe('string')
     expect(typeof getByPath(en, profile.roleKey)).toBe('string')
   })

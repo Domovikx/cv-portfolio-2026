@@ -10,17 +10,19 @@
     "cta": "Связаться"
   },
   "hero": {
-    "greeting": "Привет, я DomovikX —",
+    "greeting": "Привет, я Илья Ивановский —",
     "roleMain": "Frontend-разработчик",
     "roleAccent": "(React + Angular)",
     "subtitle": "Разработчик, который любит фронтенд, дизайн-системы и аккуратный код. Работаю с React и Angular, строю сложные формы, таблицы и фильтры. Этот сайт — живое портфолио: Feature-Sliced Design, дизайн-токены, микро-UI-kit, i18n, тесты и деплой через GitHub Actions.",
     "chips": ["React", "Angular", "TypeScript", "Vite", "Feature-Sliced Design"],
+    "photoAlt": "Портрет Ильи Ивановского — Frontend-разработчик (React + Angular)",
     "ctaPrimary": "Связаться",
     "ctaSecondary": "Смотреть проекты"
   },
   "about": {
     "title": "Лучший фронтенд делают лучшие практики",
     "text": "Frontend для меня — это не только код, но и архитектура, тесты и внимание к деталям интерфейса. В этом проекте всё по-настоящему: рабочая дизайн-система, строгий линтинг и проверка архитектуры.",
+    "photoAlt": "Портрет DomovikX",
     "cards": [
       {
         "title": "Инновации — моя работа",
@@ -123,7 +125,7 @@
     "resumeCta": "Скачать резюме (PDF)"
   },
   "footer": {
-    "copyright": "© 2026 DomovikX",
+    "copyright": "© 2026 Илья Ивановский",
     "madeWith": "React 19 · Vite · TypeScript · Feature-Sliced Design"
   },
   "profile": {
