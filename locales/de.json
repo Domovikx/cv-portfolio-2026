@@ -124,7 +124,8 @@
     "telegramCta": "Telegram",
     "emailCta": "E-Mail",
     "githubCta": "GitHub",
-    "resumeCta": "Lebenslauf (PDF) herunterladen"
+    "resumeCta": "Lebenslauf (PDF) herunterladen",
+    "phoneHint": "Nur zur Information — Kontakt über Telegram oder E-Mail"
   },
   "respondForm": {
     "title": "Auf die Stelle bewerben",

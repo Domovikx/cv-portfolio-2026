@@ -3,17 +3,18 @@ import { describe, expect, it } from 'vitest'
 import de from '../../locales/de.json'
 import en from '../../locales/en.json'
 import ru from '../../locales/ru.json'
+import zh from '../../locales/zh.json'
 
-const LOCALES = { ru, en, de } as const
+const LOCALES = { ru, en, de, zh } as const
 
 type JsonPrimitive = string | number | boolean | null
 type JsonValue = JsonPrimitive | JsonValue[] | { [key: string]: JsonValue }
 
-function toJsonValue(value: unknown): JsonValue {
+const toJsonValue = (value: unknown): JsonValue => {
   return value as JsonValue
 }
 
-function flattenKeys(value: unknown, prefix = ''): string[] {
+const flattenKeys = (value: unknown, prefix = ''): string[] => {
   const obj = toJsonValue(value)
 
   if (Array.isArray(obj)) {
@@ -29,7 +30,7 @@ function flattenKeys(value: unknown, prefix = ''): string[] {
   return prefix ? [prefix] : []
 }
 
-function collectLeafValues(value: unknown, result: string[] = []): string[] {
+const collectLeafValues = (value: unknown, result: string[] = []): string[] => {
   const obj = toJsonValue(value)
 
   if (Array.isArray(obj)) {

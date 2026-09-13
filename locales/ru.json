@@ -124,7 +124,8 @@
     "telegramCta": "Telegram",
     "emailCta": "Почта",
     "githubCta": "GitHub",
-    "resumeCta": "Скачать резюме (PDF)"
+    "resumeCta": "Скачать резюме (PDF)",
+    "phoneHint": "Показываю номер только для информации — связь через Telegram или почту"
   },
   "respondForm": {
     "title": "Откликнуться на вакансию",

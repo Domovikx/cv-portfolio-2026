@@ -3,16 +3,17 @@ import { describe, expect, it } from 'vitest'
 import de from '../../locales/de.json'
 import en from '../../locales/en.json'
 import ru from '../../locales/ru.json'
+import zh from '../../locales/zh.json'
 import { experienceItems } from '@/entities/experience'
 import { profile } from '@/entities/profile'
 import { projects } from '@/entities/project'
 import { skillGroups } from '@/entities/skill'
 
-const LOCALES = { ru, en, de } as const
+const LOCALES = { ru, en, de, zh } as const
 
 type RecordValue = { [key: string]: unknown }
 
-function getByPath(source: unknown, path: string): unknown {
+const getByPath = (source: unknown, path: string): unknown => {
   return path.split('.').reduce<unknown>((acc, key) => {
     if (acc !== null && typeof acc === 'object' && key in (acc as RecordValue)) {
       return (acc as RecordValue)[key]

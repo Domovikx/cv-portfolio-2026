@@ -64,3 +64,18 @@
     display: none;
   }
 }
+
+@media (max-width: 480px) {
+  .inner {
+    gap: 12px;
+    height: 60px;
+  }
+
+  .logoText {
+    display: none;
+  }
+
+  .actions {
+    gap: 8px;
+  }
+}

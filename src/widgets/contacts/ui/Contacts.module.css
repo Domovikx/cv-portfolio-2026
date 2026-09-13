@@ -62,10 +62,26 @@
 }
 
 .phone {
-  margin-top: 20px;
-  font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 32px;
+  border: 1px dashed #cfcfcf;
+  border-radius: var(--radius-btn);
+  font-family: var(--font-heading);
+  font-size: 18px;
   font-weight: 600;
   color: #666;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
 }
 
 @keyframes pulse {

@@ -124,7 +124,8 @@
     "telegramCta": "Telegram",
     "emailCta": "Email",
     "githubCta": "GitHub",
-    "resumeCta": "Download resume (PDF)"
+    "resumeCta": "Download resume (PDF)",
+    "phoneHint": "Displayed for reference only — contact via Telegram or email"
   },
   "respondForm": {
     "title": "Apply for the vacancy",

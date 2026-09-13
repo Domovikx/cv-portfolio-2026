@@ -10,7 +10,7 @@ declare global {
   }
 }
 
-function logCv() {
+const logCv = () => {
   console.log(
     '%c CV PORTFOLIO 2026 %c привет! ',
     'background:#ef3124;color:#fff;font-weight:700;padding:4px 10px;border-radius:4px 0 0 4px;',
@@ -22,7 +22,7 @@ function logCv() {
   )
 }
 
-function stats(): Record<string, unknown> {
+const stats = (): Record<string, unknown> => {
   return {
     sections: document.querySelectorAll('section').length,
     buttons: document.querySelectorAll('button').length,
@@ -33,7 +33,7 @@ function stats(): Record<string, unknown> {
   }
 }
 
-export function initEasterEgg(): void {
+export const initEasterEgg = (): void => {
   if (typeof window === 'undefined' || window.__cv) return
   window.__cv = {
     stats,

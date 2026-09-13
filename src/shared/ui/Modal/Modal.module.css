@@ -62,3 +62,14 @@
     opacity: 1;
   }
 }
+
+@media (max-width: 480px) {
+  .modal {
+    max-height: calc(100dvh - 24px);
+    padding: 24px 16px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+}

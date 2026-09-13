@@ -20,7 +20,7 @@ type FieldErrors = Partial<Record<keyof RespondPayload | 'consent', TranslationK
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 const URL_RE = /^(https?:\/\/)?([\w-]+\.)+[\w-]{2,}(\/\S*)?$/
 
-function validate(form: RespondPayload, consent: boolean): FieldErrors {
+const validate = (form: RespondPayload, consent: boolean): FieldErrors => {
   const errors: FieldErrors = {}
 
   if (!form.name.trim()) errors.name = 'respondForm.required'

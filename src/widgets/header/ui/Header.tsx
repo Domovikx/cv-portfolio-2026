@@ -16,7 +16,7 @@ export const Header = () => {
       <Container className={styles.inner}>
         <a href="#top" className={styles.logo}>
           <span className={styles.logoMark}>И</span>
-          <span>{profile.name}</span>
+          <span className={styles.logoText}>{profile.name}</span>
         </a>
         <nav className={styles.nav} aria-label="Main" data-testid="nav">
           {NAV_KEYS.map((key) => (

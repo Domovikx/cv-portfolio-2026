@@ -1,0 +1,165 @@
+{
+  "header": {
+    "nav": {
+      "about": "关于我",
+      "stack": "技术栈",
+      "experience": "经验",
+      "projects": "项目",
+      "contacts": "联系方式"
+    },
+    "cta": "联系我"
+  },
+  "hero": {
+    "greeting": "你好，我是伊利亚·伊万诺夫斯基",
+    "roleMain": "前端开发工程师",
+    "roleAccent": "(React + Angular)",
+    "subtitle": "热爱前端、设计系统和整洁代码的开发者。使用 React 和 Angular，构建复杂的表单、表格和筛选器。这个网站是一个真实的作品集：Feature-Sliced Design、设计令牌、微型 UI 套件、i18n、测试以及通过 GitHub Actions 部署。",
+    "chips": ["React", "Angular", "TypeScript", "Vite", "Feature-Sliced Design"],
+    "listen": "语音问候",
+    "photoAlt": "伊利亚·伊万诺夫斯基的肖像 — 前端开发工程师 (React + Angular)",
+    "ctaPrimary": "联系我",
+    "ctaSecondary": "查看项目"
+  },
+  "about": {
+    "title": "最好的前端来自最好的实践",
+    "text": "前端对我来说不仅是代码，更是架构、测试和对界面细节的关注。这个项目里一切都是真实的：可用的设计系统、严格的代码检查和架构验证。",
+    "cards": [
+      {
+        "title": "创新是我的工作",
+        "text": "最新的技术栈：React 19、Vite、TypeScript。我关注新版本并采纳最佳实践。"
+      },
+      {
+        "title": "对质量的执着",
+        "text": "代码检查、格式化、单元测试和组件测试。代码必须清晰可靠。"
+      },
+      {
+        "title": "架构在你手中",
+        "text": "Feature-Sliced Design、明确的模块公开 API、可复用的组件。"
+      },
+      {
+        "title": "工作中的 AI",
+        "text": "在开发、原型设计和测试中使用 AI 工具。"
+      }
+    ]
+  },
+  "stack": {
+    "title": "我的技术栈",
+    "subtitle": "我会什么，以及我用什么工作",
+    "groups": {
+      "frameworks": "框架",
+      "languages": "语言与样式",
+      "integrations": "集成",
+      "tools": "工具",
+      "ai": "AI 工具"
+    }
+  },
+  "experience": {
+    "title": "我的工作内容",
+    "subtitle": "经验和关键阶段",
+    "items": [
+      {
+        "period": "2020 — 2021",
+        "role": "学习 JavaScript，Andersen 课程",
+        "company": "Andersen JS Course",
+        "text": "JavaScript 强化课程：数据结构、异步、DOM、React 基础。第一批测试任务：基于 Vue + Firebase 的 CRM（毕业项目）、React 商城、注意力训练游戏。",
+        "tags": ["JavaScript", "React", "Vue", "Firebase"]
+      },
+      {
+        "period": "2021 — 2023",
+        "role": "前端开发工程师（自学）",
+        "company": "个人项目和课程作业",
+        "text": "测试任务和学习项目：带 Firebase 后端的 React 应用、带路由和布局的 Angular 8 课程作业。完成了 Rolling Scopes School。",
+        "tags": ["React", "Angular", "TypeScript"]
+      },
+      {
+        "period": "2023 — 2026",
+        "role": "界面与 AI 工具",
+        "company": "个人项目，开源",
+        "text": "游戏本地化和 AI 配音（Ren'Py、Qwen 声音克隆，约 6.7 万句台词）、Python 自动化工具、使用 opencode 和本地 LLM 开发。",
+        "tags": ["AI", "TTS", "Python", "Ren'Py", "opencode"]
+      }
+    ]
+  },
+  "projects": {
+    "title": "项目",
+    "subtitle": "可以亲手体验的东西",
+    "items": [
+      {
+        "title": "vue_crm — 基于 Vue 的 CRM",
+        "text": "毕业项目：认证、复杂表单、表格、筛选、校验、CRUD。Vuex + Vuetify + Firebase。",
+        "tags": ["Vue", "Vuex", "Vuetify", "Firebase"]
+      },
+      {
+        "title": "angular-nabludenie-by",
+        "text": "Angular 8 课程作业：路由、布局、数据处理。托管在 GitHub Pages 上。",
+        "tags": ["Angular", "TypeScript", "GitHub Pages"]
+      },
+      {
+        "title": "react-todo-list",
+        "text": "第一份 React 作品：带状态管理的待办应用，发布在 GitHub Pages 上。",
+        "tags": ["React", "JavaScript"]
+      },
+      {
+        "title": "react_tz_2021",
+        "text": "React 测试任务：与 REST 后端集成，部署在 Firebase Hosting 上。",
+        "tags": ["React", "REST API", "Firebase"]
+      },
+      {
+        "title": "react_maze",
+        "text": "测试任务：一个带迷宫分步导航的注意力训练游戏。",
+        "tags": ["React", "Game"]
+      },
+      {
+        "title": "The Survival of Sarah Rose",
+        "text": "游戏俄语本地化和约 6.7 万句台词的完整 AI 配音：生成工具、目录管理、音频清理。",
+        "tags": ["Ren'Py", "Python", "AI", "TTS"]
+      }
+    ]
+  },
+  "contacts": {
+    "title": "联系方式",
+    "text": "响应前端开发工程师（React + Angular）的职位。接受远程或混合办公，愿意讨论复杂的表单、表格和内部系统。",
+    "availability": "欢迎合作机会",
+    "respondCta": "申请职位",
+    "telegramCta": "Telegram",
+    "emailCta": "邮箱",
+    "githubCta": "GitHub",
+    "resumeCta": "下载简历 (PDF)",
+    "phoneHint": "仅供展示 — 请通过 Telegram 或邮箱联系"
+  },
+  "respondForm": {
+    "title": "申请职位",
+    "name": "名字",
+    "surname": "姓氏",
+    "email": "电子邮箱",
+    "phone": "电话（选填）",
+    "resumeLink": "简历链接（选填）",
+    "consent": "我同意处理和使用我的个人数据",
+    "required": "必填字段",
+    "emailInvalid": "邮箱格式不正确",
+    "linkInvalid": "链接格式不正确",
+    "consentRequired": "需要同意",
+    "submit": "发送",
+    "sending": "发送中...",
+    "success": "谢谢！演示申请已发送 — 这是一个带真实 POST 请求的 RTK Query mutation。",
+    "error": "出了点问题。请重试。",
+    "close": "关闭",
+    "hint": "演示：请求发送到 jsonplaceholder.typicode.com（公共 API）"
+  },
+  "githubRepos": {
+    "title": "我的仓库（GitHub API）",
+    "cta": "从 GitHub API 实时获取仓库列表",
+    "loading": "正在加载仓库...",
+    "empty": "暂时为空",
+    "error": "加载失败（可能超出了 GitHub API 限制）。",
+    "retry": "重试"
+  },
+  "footer": {
+    "copyright": "© 2026 伊利亚·伊万诺夫斯基",
+    "madeWith": "React 19 · Vite · TypeScript · Feature-Sliced Design"
+  },
+  "profile": {
+    "role": "前端开发工程师 (React + Angular)",
+    "location": "远程 / 混合"
+  }
+}

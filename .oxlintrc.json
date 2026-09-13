@@ -19,7 +19,8 @@
       {
         "fixStyle": "separate-type-imports"
       }
-    ]
+    ],
+    "func-style": ["error", "expression"]
   },
   "ignorePatterns": ["dist", "node_modules", "coverage"]
 }

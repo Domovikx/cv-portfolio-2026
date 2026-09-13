@@ -2,7 +2,7 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  margin: 0 0 0 10px;
+  margin: 0;
   padding: 7px 14px 7px 8px;
   border: 1px solid #e8e8e8;
   border-radius: 999px;
@@ -11,7 +11,6 @@
   font-size: 13px;
   font-weight: 600;
   line-height: 1;
-  vertical-align: middle;
   transition:
     border-color var(--transition-fast),
     background-color var(--transition-fast),
@@ -57,4 +56,31 @@
 
 .playing .duration {
   color: rgba(255, 255, 255, 0.85);
+}
+
+@media (max-width: 768px) {
+  .duration,
+  .separator {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .player {
+    padding: 4px;
+    gap: 0;
+  }
+
+  .icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .label {
+    display: none;
+  }
+
+  .player:not(.playing) .icon {
+    background-color: var(--alfa-red);
+  }
 }

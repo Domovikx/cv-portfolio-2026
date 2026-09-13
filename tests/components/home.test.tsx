@@ -5,7 +5,7 @@ import { describe, expect, it } from 'vitest'
 import { AppProviders } from '@/app/providers'
 import { HomePage } from '@/pages/home'
 
-function renderHome() {
+const renderHome = () => {
   return render(
     <AppProviders>
       <HomePage />
@@ -76,7 +76,7 @@ describe('HomePage', () => {
     expect(screen.getByTestId('voice-intro')).toBeInTheDocument()
   })
 
-  it('switches language to English, German and back', async () => {
+  it('switches language to English, German, Chinese and back', async () => {
     const user = userEvent.setup()
     renderHome()
 
@@ -87,6 +87,10 @@ describe('HomePage', () => {
     await user.click(screen.getByRole('button', { name: 'DE' }))
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Frontend-Entwickler')
     expect(screen.getByRole('link', { name: 'Über mich' })).toBeInTheDocument()
+
+    await user.click(screen.getByRole('button', { name: 'ZH' }))
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('前端开发工程师')
+    expect(screen.getByRole('link', { name: '关于我' })).toBeInTheDocument()
 
     await user.click(screen.getByRole('button', { name: 'RU' }))
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Frontend-разработчик')

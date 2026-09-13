@@ -3,15 +3,16 @@ import { initReactI18next } from 'react-i18next'
 import de from '../../../locales/de.json'
 import en from '../../../locales/en.json'
 import ru from '../../../locales/ru.json'
+import zh from '../../../locales/zh.json'
 
-export const LANGS = ['ru', 'en', 'de'] as const
+export const LANGS = ['ru', 'zh', 'en', 'de'] as const
 export type Lang = (typeof LANGS)[number]
 
 export const DEFAULT_LANG: Lang = 'ru'
 
 const STORAGE_KEY = 'cv-portfolio-2026:lang'
 
-function getInitialLang(): Lang {
+const getInitialLang = (): Lang => {
   const saved = typeof localStorage !== 'undefined' ? localStorage.getItem(STORAGE_KEY) : null
   return LANGS.includes(saved as Lang) ? (saved as Lang) : DEFAULT_LANG
 }
@@ -21,13 +22,14 @@ void i18n.use(initReactI18next).init({
     ru: { translation: ru },
     en: { translation: en },
     de: { translation: de },
+    zh: { translation: zh },
   },
   lng: getInitialLang(),
   fallbackLng: DEFAULT_LANG,
   interpolation: { escapeValue: false },
 })
 
-export function setLang(lang: Lang): void {
+export const setLang = (lang: Lang): void => {
   localStorage.setItem(STORAGE_KEY, lang)
   void i18n.changeLanguage(lang)
 }

@@ -6,9 +6,10 @@ import type { Lang } from '@/shared/config'
 import de from '../assets/intro-de.mp3'
 import en from '../assets/intro-en.mp3'
 import ru from '../assets/intro-ru.mp3'
+import zh from '../assets/intro-zh.mp3'
 import styles from './VoiceIntro.module.css'
 
-const AUDIO: Record<Lang, string> = { ru, en, de }
+const AUDIO: Record<Lang, string> = { ru, en, de, zh }
 
 export const VoiceIntro = () => {
   const { t, i18n } = useTranslation()
@@ -49,6 +50,7 @@ export const VoiceIntro = () => {
       className={`${styles.player}${playing ? ` ${styles.playing}` : ''}`}
       onClick={handleToggle}
       aria-pressed={playing}
+      aria-label={t('hero.listen')}
       data-testid="voice-intro"
     >
       {/* oxlint-disable-next-line jsx-a11y/media-has-caption -- голосовое приветствие дублируется текстом на странице (greeting/subtitle) */}
@@ -72,7 +74,9 @@ export const VoiceIntro = () => {
       <span className={styles.label}>{t('hero.listen')}</span>
       {duration !== null ? (
         <>
-          <span aria-hidden="true">·</span>
+          <span className={styles.separator} aria-hidden="true">
+            ·
+          </span>
           <span className={styles.duration}>{duration} с</span>
         </>
       ) : null}
