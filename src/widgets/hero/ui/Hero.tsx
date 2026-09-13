@@ -19,8 +19,9 @@ export const Hero = () => {
       </div>
       <Container className={styles.content}>
         <div className={styles.textBlock}>
-          <p className={styles.greeting}>{t('hero.greeting')}</p>
-          <VoiceIntro />
+          <p className={styles.greeting}>
+            {t('hero.greeting')} <VoiceIntro />
+          </p>
           <h1 className={styles.title} data-testid="hero-title">
             {t('hero.roleMain')} <span className={styles.titleAccent}>{t('hero.roleAccent')}</span>
           </h1>

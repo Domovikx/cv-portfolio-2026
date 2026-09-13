@@ -10,7 +10,7 @@
     "cta": "Contact me"
   },
   "hero": {
-    "greeting": "Hi, I'm Ilya Ivanovsky —",
+    "greeting": "Hi, I'm Ilya Ivanovsky",
     "roleMain": "Frontend Developer",
     "roleAccent": "(React + Angular)",
     "subtitle": "A developer who loves frontend, design systems and clean code. I work with React and Angular, building complex forms, tables and filters. This site is a living portfolio: Feature-Sliced Design, design tokens, a micro UI-kit, i18n, tests and deployment via GitHub Actions.",
