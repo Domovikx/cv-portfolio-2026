@@ -134,10 +134,10 @@
     "consentRequired": "需要同意",
     "submit": "发送",
     "sending": "发送中...",
-    "success": "谢谢！演示申请已发送 — 这是一个带真实 POST 请求的 RTK Query mutation。",
+    "success": "谢谢！申请已发送到我的邮箱 {{email}} — 我会尽快回复。",
     "error": "出了点问题。请重试。",
     "close": "关闭",
-    "hint": "演示：请求发送到 jsonplaceholder.typicode.com（公共 API）"
+    "hint": "申请通过 Web3Forms 投递到邮箱"
   },
   "githubRepos": {
     "title": "我的仓库（GitHub API）",

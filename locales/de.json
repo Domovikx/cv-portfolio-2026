@@ -134,10 +134,10 @@
     "consentRequired": "Zustimmung erforderlich",
     "submit": "Senden",
     "sending": "Senden...",
-    "success": "Danke! Die Demo-Bewerbung wurde gesendet — das ist eine RTK Query Mutation mit echtem POST-Request.",
+    "success": "Danke! Die Bewerbung wurde an meine E-Mail {{email}} gesendet — ich melde mich bald.",
     "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
     "close": "Schließen",
-    "hint": "Demo: Die Anfrage geht an jsonplaceholder.typicode.com (öffentliche API)"
+    "hint": "Bewerbungen werden per Web3Forms an die E-Mail zugestellt"
   },
   "githubRepos": {
     "title": "Meine Repositories (GitHub API)",

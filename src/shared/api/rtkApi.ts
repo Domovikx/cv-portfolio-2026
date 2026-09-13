@@ -1,5 +1,7 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
+import { site } from '@/shared/config'
+
 export type GitHubRepo = {
   id: number
   name: string
@@ -20,6 +22,11 @@ export type RespondPayload = {
   resumeLink?: string
 }
 
+type RespondResponse = {
+  success: boolean
+  message: string
+}
+
 export const rtkApi = createApi({
   reducerPath: 'api',
   baseQuery: fetchBaseQuery({ baseUrl: 'https://api.github.com' }),
@@ -29,11 +36,23 @@ export const rtkApi = createApi({
       query: () => '/users/DomovikX/repos?sort=updated&per_page=12',
       keepUnusedDataFor: 60,
     }),
-    sendRespond: build.mutation<{ id: number; echo: RespondPayload }, RespondPayload>({
+    sendRespond: build.mutation<RespondResponse, RespondPayload>({
       query: (payload) => ({
-        url: 'https://jsonplaceholder.typicode.com/posts',
+        url: site.form.endpoint,
         method: 'POST',
-        body: payload,
+        body: {
+          access_key: site.form.accessKey,
+          subject: site.form.subject,
+          from_name: `${payload.name} ${payload.surname}`,
+          email: payload.email,
+          replyto: payload.email,
+          message: [
+            `Имя: ${payload.name} ${payload.surname}`,
+            `Email: ${payload.email}`,
+            `Телефон: ${payload.phone || '—'}`,
+            `Ссылка на резюме: ${payload.resumeLink || '—'}`,
+          ].join('\n'),
+        },
       }),
     }),
   }),

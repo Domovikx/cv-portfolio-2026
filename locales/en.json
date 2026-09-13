@@ -134,10 +134,10 @@
     "consentRequired": "Consent is required",
     "submit": "Send",
     "sending": "Sending...",
-    "success": "Thank you! The demo application was sent — this is an RTK Query mutation with a real POST request.",
+    "success": "Thank you! The application is sent to my email {{email}} — I will reply soon.",
     "error": "Something went wrong. Please try again.",
     "close": "Close",
-    "hint": "Demo: the request goes to jsonplaceholder.typicode.com (public API)"
+    "hint": "Applications are delivered to email via Web3Forms"
   },
   "githubRepos": {
     "title": "My repositories (GitHub API)",

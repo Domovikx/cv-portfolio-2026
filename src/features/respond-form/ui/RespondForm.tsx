@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next'
 import { useSendRespondMutation } from '@/shared/api'
 import type { RespondPayload } from '@/shared/api'
 import type { TranslationKey } from '@/shared/config'
+import { profile } from '@/entities/profile'
 import { cn, useCvTranslation } from '@/shared/lib'
 import { Button, Modal } from '@/shared/ui'
 
@@ -75,7 +76,7 @@ export const RespondForm = ({ open, onClose }: RespondFormProps) => {
           <span className={styles.successIcon} aria-hidden="true">
             ✓
           </span>
-          <p>{t('respondForm.success')}</p>
+          <p>{t('respondForm.success', { email: profile.email })}</p>
           <Button variant="ghost" onClick={handleClose}>
             {t('respondForm.close')}
           </Button>
