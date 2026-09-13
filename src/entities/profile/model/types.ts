@@ -6,6 +6,8 @@ export type Profile = {
   roleKey: TranslationKey
   locationKey: TranslationKey
   email: string
+  phone: string
+  telegram: string
   github: string
   resumeUrl: string
 }

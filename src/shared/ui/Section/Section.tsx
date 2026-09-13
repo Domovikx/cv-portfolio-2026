@@ -10,7 +10,7 @@ export type SectionProps = PropsWithChildren<{
   className?: string
 }>
 
-export function Section({ id, variant = 'white', className, children }: SectionProps) {
+export const Section = ({ id, variant = 'white', className, children }: SectionProps) => {
   return (
     <section id={id} className={cn(styles.section, variant === 'gray' && styles.gray, className)}>
       {children}

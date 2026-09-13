@@ -6,7 +6,7 @@ import { Container } from '@/shared/ui'
 
 import styles from './Footer.module.css'
 
-export function Footer() {
+export const Footer = () => {
   const { t } = useTranslation()
 
   return (

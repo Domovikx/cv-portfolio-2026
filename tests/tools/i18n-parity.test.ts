@@ -1,7 +1,10 @@
 import { describe, expect, it } from 'vitest'
 
+import de from '../../locales/de.json'
 import en from '../../locales/en.json'
 import ru from '../../locales/ru.json'
+
+const LOCALES = { ru, en, de } as const
 
 type JsonPrimitive = string | number | boolean | null
 type JsonValue = JsonPrimitive | JsonValue[] | { [key: string]: JsonValue }
@@ -40,18 +43,23 @@ function collectLeafValues(value: unknown, result: string[] = []): string[] {
   return result
 }
 
-describe('i18n parity (обратный перевод en ↔ ru)', () => {
-  it('en has exactly the same key set as ru', () => {
-    expect(flattenKeys(en).sort()).toEqual(flattenKeys(ru).sort())
+describe('i18n parity (обратный перевод между всеми локалями)', () => {
+  const names = Object.keys(LOCALES)
+  const keySets = Object.fromEntries(
+    Object.entries(LOCALES).map(([name, data]) => [name, flattenKeys(data).sort()]),
+  )
+
+  it('все локали имеют одинаковый набор ключей', () => {
+    const reference = keySets.ru
+    for (const name of names) {
+      expect(keySets[name], `локаль ${name}`).toEqual(reference)
+    }
   })
 
-  it('ru has no empty translations', () => {
-    const empty = collectLeafValues(ru).filter((value) => value.trim() === '')
-    expect(empty).toEqual([])
-  })
-
-  it('en has no empty translations', () => {
-    const empty = collectLeafValues(en).filter((value) => value.trim() === '')
-    expect(empty).toEqual([])
+  it('ни в одной локали нет пустых переводов', () => {
+    for (const [name, data] of Object.entries(LOCALES)) {
+      const empty = collectLeafValues(data).filter((value) => value.trim() === '')
+      expect(empty, `локаль ${name}`).toEqual([])
+    }
   })
 })

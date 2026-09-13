@@ -1,0 +1,164 @@
+{
+  "header": {
+    "nav": {
+      "about": "Über mich",
+      "stack": "Stack",
+      "experience": "Erfahrung",
+      "projects": "Projekte",
+      "contacts": "Kontakt"
+    },
+    "cta": "Kontakt"
+  },
+  "hero": {
+    "greeting": "Hallo, ich bin Ilya Ivanovsky —",
+    "roleMain": "Frontend-Entwickler",
+    "roleAccent": "(React + Angular)",
+    "subtitle": "Ein Entwickler, der Frontend, Design-Systeme und sauberen Code liebt. Ich arbeite mit React und Angular und baue komplexe Formulare, Tabellen und Filter. Diese Seite ist ein lebendiges Portfolio: Feature-Sliced Design, Design-Tokens, ein Micro-UI-Kit, i18n, Tests und Deployment über GitHub Actions.",
+    "chips": ["React", "Angular", "TypeScript", "Vite", "Feature-Sliced Design"],
+    "listen": "Anhören",
+    "photoAlt": "Porträt von Ilya Ivanovsky — Frontend-Entwickler (React + Angular)",
+    "ctaPrimary": "Kontakt",
+    "ctaSecondary": "Projekte ansehen"
+  },
+  "about": {
+    "title": "Das beste Frontend entsteht durch Best Practices",
+    "text": "Frontend ist für mich nicht nur Code, sondern auch Architektur, Tests und Liebe zum Detail in der UI. Alles in diesem Projekt ist echt: ein funktionierendes Design-System, striktes Linting und Architektur-Checks.",
+    "cards": [
+      {
+        "title": "Innovation ist mein Job",
+        "text": "Aktueller Stack: React 19, Vite, TypeScript. Ich verfolge Releases und übernehme das Beste."
+      },
+      {
+        "title": "Sorge um Qualität",
+        "text": "Linting, Formatierung, Unit- und Component-Tests. Code muss klar und zuverlässig sein."
+      },
+      {
+        "title": "Architektur in deinen Händen",
+        "text": "Feature-Sliced Design, explizite öffentliche Modul-APIs, wiederverwendbare Komponenten."
+      },
+      {
+        "title": "KI bei der Arbeit",
+        "text": "Ich nutze KI-Tools in Entwicklung, Prototyping und Testing."
+      }
+    ]
+  },
+  "stack": {
+    "title": "Mein Stack",
+    "subtitle": "Was ich kann und womit ich arbeite",
+    "groups": {
+      "frameworks": "Frameworks",
+      "languages": "Sprachen & Markup",
+      "integrations": "Integrationen",
+      "tools": "Tools",
+      "ai": "KI-Tools"
+    }
+  },
+  "experience": {
+    "title": "Was ich mache",
+    "subtitle": "Erfahrung und wichtige Meilensteine",
+    "items": [
+      {
+        "period": "2020 — 2021",
+        "role": "JavaScript lernen, Andersen-Kurs",
+        "company": "Andersen JS Course",
+        "text": "Intensivkurs JavaScript: Datenstrukturen, Async, DOM, React-Grundlagen. Erste Testaufgaben: CRM auf Vue + Firebase (Diplom), ein Shop auf React, ein Aufmerksamkeitsspiel.",
+        "tags": ["JavaScript", "React", "Vue", "Firebase"]
+      },
+      {
+        "period": "2021 — 2023",
+        "role": "Frontend-Entwickler (Self-Study)",
+        "company": "Pet-Projekte und Kursarbeit",
+        "text": "Testaufgaben und Lernprojekte: eine React-App mit Firebase-Backend, eine Angular-8-Kursarbeit mit Routing und Layout. Rolling Scopes School abgeschlossen.",
+        "tags": ["React", "Angular", "TypeScript"]
+      },
+      {
+        "period": "2023 — 2026",
+        "role": "Schnittstellen und KI-Tools",
+        "company": "Pet-Projekte, Open Source",
+        "text": "Spiel-Lokalisierung und KI-Synchronisation (Ren'Py, Qwen Voice Cloning, ~67 Tsd. Zeilen), Python-Automatisierung, Entwicklung mit opencode und lokalen LLMs.",
+        "tags": ["KI", "TTS", "Python", "Ren'Py", "opencode"]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projekte",
+    "subtitle": "Dinge, die man anfassen kann",
+    "items": [
+      {
+        "title": "vue_crm — CRM in Vue",
+        "text": "Diplomprojekt: Auth, komplexe Formulare, Tabellen, Filter, Validierung, CRUD. Vuex + Vuetify + Firebase.",
+        "tags": ["Vue", "Vuex", "Vuetify", "Firebase"]
+      },
+      {
+        "title": "angular-nabludenie-by",
+        "text": "Angular-8-Kursarbeit: Routing, Layout, Datenverarbeitung. Gehostet auf GitHub Pages.",
+        "tags": ["Angular", "TypeScript", "GitHub Pages"]
+      },
+      {
+        "title": "react-todo-list",
+        "text": "Erste React-Arbeit: Todo-App mit State-Management, veröffentlicht auf GitHub Pages.",
+        "tags": ["React", "JavaScript"]
+      },
+      {
+        "title": "react_tz_2021",
+        "text": "React-Testaufgabe: Integration mit einem REST-Backend, deployed auf Firebase Hosting.",
+        "tags": ["React", "REST API", "Firebase"]
+      },
+      {
+        "title": "react_maze",
+        "text": "Testaufgabe: ein Aufmerksamkeitstraining-Spiel mit schrittweiser Labyrinth-Navigation.",
+        "tags": ["React", "Game"]
+      },
+      {
+        "title": "The Survival of Sarah Rose",
+        "text": "Russische Spielübersetzung und vollständige KI-Synchronisation von ~67 Tsd. Zeilen: Generierungstools, Katalogisierung, Audio-Reinigung.",
+        "tags": ["Ren'Py", "Python", "KI", "TTS"]
+      }
+    ]
+  },
+  "contacts": {
+    "title": "Kontakt",
+    "text": "Ich melde mich auf Frontend-Entwickler-Stellen (React + Angular). Offen für Remote oder Hybrid, bereit, komplexe Formulare, Tabellen und interne Systeme zu besprechen.",
+    "availability": "Offen für Angebote",
+    "respondCta": "Bewerben",
+    "telegramCta": "Telegram",
+    "emailCta": "E-Mail",
+    "githubCta": "GitHub",
+    "resumeCta": "Lebenslauf (PDF) herunterladen"
+  },
+  "respondForm": {
+    "title": "Auf die Stelle bewerben",
+    "name": "Vorname",
+    "surname": "Nachname",
+    "email": "E-Mail",
+    "phone": "Telefon (optional)",
+    "resumeLink": "Link zum Lebenslauf (optional)",
+    "consent": "Ich stimme der Verarbeitung und Nutzung meiner persönlichen Daten zu",
+    "required": "Pflichtfeld",
+    "emailInvalid": "Ungültige E-Mail",
+    "linkInvalid": "Ungültiger Link",
+    "consentRequired": "Zustimmung erforderlich",
+    "submit": "Senden",
+    "sending": "Senden...",
+    "success": "Danke! Die Demo-Bewerbung wurde gesendet — das ist eine RTK Query Mutation mit echtem POST-Request.",
+    "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+    "close": "Schließen",
+    "hint": "Demo: Die Anfrage geht an jsonplaceholder.typicode.com (öffentliche API)"
+  },
+  "githubRepos": {
+    "title": "Meine Repositories (GitHub API)",
+    "cta": "Live-Liste der Repositories von der GitHub-API",
+    "loading": "Repositories werden geladen...",
+    "empty": "Noch nichts hier",
+    "error": "Laden fehlgeschlagen (wahrscheinlich GitHub-API-Limit überschritten).",
+    "retry": "Erneut versuchen"
+  },
+  "footer": {
+    "copyright": "© 2026 Ilya Ivanovsky",
+    "madeWith": "React 19 · Vite · TypeScript · Feature-Sliced Design"
+  },
+  "profile": {
+    "role": "Frontend-Entwickler (React + Angular)",
+    "location": "Remote / hybrid"
+  }
+}

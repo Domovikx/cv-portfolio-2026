@@ -7,7 +7,7 @@ import { Hero } from '@/widgets/hero'
 import { Projects } from '@/widgets/projects'
 import { Stack } from '@/widgets/stack'
 
-export function HomePage() {
+export const HomePage = () => {
   return (
     <>
       <Header />

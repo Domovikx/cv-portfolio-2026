@@ -1,12 +1,15 @@
+import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
 import { profile } from '@/entities/profile'
+import { RespondForm } from '@/features/respond-form'
 import { Button, Container, Section } from '@/shared/ui'
 
 import styles from './Contacts.module.css'
 
-export function Contacts() {
+export const Contacts = () => {
   const { t } = useTranslation()
+  const [respondOpen, setRespondOpen] = useState(false)
 
   return (
     <Section id="contacts" variant="gray">
@@ -18,7 +21,14 @@ export function Contacts() {
           {t('contacts.availability')}
         </span>
         <div className={styles.actions}>
-          <Button href={`mailto:${profile.email}`} size="l">
+          <Button size="l" data-testid="respond-open" onClick={() => setRespondOpen(true)}>
+            {t('contacts.respondCta')}
+          </Button>
+          <Button href={profile.telegram} size="l" variant="ghost" target="_blank" rel="noreferrer">
+            {t('contacts.telegramCta')}
+          </Button>
+          {profile.phone ? <span className={styles.phone}>{profile.phone}</span> : null}
+          <Button href={`mailto:${profile.email}`} variant="ghost" size="l">
             {t('contacts.emailCta')}
           </Button>
           <Button href={profile.github} variant="ghost" size="l" target="_blank" rel="noreferrer">
@@ -34,6 +44,7 @@ export function Contacts() {
           </Button>
         </div>
       </Container>
+      <RespondForm open={respondOpen} onClose={() => setRespondOpen(false)} />
     </Section>
   )
 }

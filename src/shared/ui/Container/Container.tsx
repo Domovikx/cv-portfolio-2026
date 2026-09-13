@@ -8,6 +8,6 @@ export type ContainerProps = PropsWithChildren<{
   className?: string
 }>
 
-export function Container({ className, children }: ContainerProps) {
+export const Container = ({ className, children }: ContainerProps) => {
   return <div className={cn(styles.container, className)}>{children}</div>
 }

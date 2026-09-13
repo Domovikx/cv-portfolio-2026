@@ -6,7 +6,7 @@ import { Card, Chip, Container, Section, SectionTitle } from '@/shared/ui'
 
 import styles from './Stack.module.css'
 
-export function Stack() {
+export const Stack = () => {
   const { t } = useTranslation()
   const tc = useCvTranslation()
 

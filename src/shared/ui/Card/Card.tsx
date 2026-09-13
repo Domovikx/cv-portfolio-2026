@@ -9,7 +9,7 @@ export type CardProps = PropsWithChildren<{
   className?: string
 }>
 
-export function Card({ variant = 'white', className, children }: CardProps) {
+export const Card = ({ variant = 'white', className, children }: CardProps) => {
   return (
     <div className={cn(styles.card, variant === 'gray' && styles.gray, className)}>{children}</div>
   )

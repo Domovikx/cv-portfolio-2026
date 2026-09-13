@@ -1,14 +1,17 @@
+import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
 import { projects } from '@/entities/project'
+import { GithubRepos } from '@/features/github-repos'
 import { useCvTranslation } from '@/shared/lib'
-import { Card, Chip, Container, Section, SectionTitle } from '@/shared/ui'
+import { Button, Card, Chip, Container, Section, SectionTitle } from '@/shared/ui'
 
 import styles from './Projects.module.css'
 
-export function Projects() {
+export const Projects = () => {
   const { t } = useTranslation()
   const tc = useCvTranslation()
+  const [reposOpen, setReposOpen] = useState(false)
 
   return (
     <Section id="projects">
@@ -45,7 +48,13 @@ export function Projects() {
             </Card>
           ))}
         </div>
+        <div className={styles.liveBlock}>
+          <Button variant="ghost" onClick={() => setReposOpen(true)}>
+            {t('githubRepos.cta')}
+          </Button>
+        </div>
       </Container>
+      <GithubRepos open={reposOpen} onClose={() => setReposOpen(false)} />
     </Section>
   )
 }

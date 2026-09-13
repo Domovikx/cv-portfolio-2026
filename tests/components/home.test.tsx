@@ -55,13 +55,38 @@ describe('HomePage', () => {
     expect(resumeLink).toHaveAttribute('href', expect.stringContaining('.pdf'))
   })
 
-  it('switches language to English and back', async () => {
+  it('opens respond form modal with validation', async () => {
+    const user = userEvent.setup()
+    renderHome()
+
+    await user.click(screen.getByRole('button', { name: 'Откликнуться' }))
+    const dialog = document.querySelector('dialog')
+    expect(dialog).not.toBeNull()
+    expect(screen.getByLabelText('Имя')).toBeInTheDocument()
+
+    await user.click(screen.getByRole('button', { name: 'Отправить' }))
+    expect(screen.getAllByText('Обязательное поле').length).toBeGreaterThanOrEqual(3)
+
+    await user.click(screen.getByRole('button', { name: 'Close' }))
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
+  })
+
+  it('renders voice intro player in hero', () => {
+    renderHome()
+    expect(screen.getByTestId('voice-intro')).toBeInTheDocument()
+  })
+
+  it('switches language to English, German and back', async () => {
     const user = userEvent.setup()
     renderHome()
 
     await user.click(screen.getByRole('button', { name: 'EN' }))
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Frontend Developer')
     expect(screen.getByRole('link', { name: 'About' })).toBeInTheDocument()
+
+    await user.click(screen.getByRole('button', { name: 'DE' }))
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Frontend-Entwickler')
+    expect(screen.getByRole('link', { name: 'Über mich' })).toBeInTheDocument()
 
     await user.click(screen.getByRole('button', { name: 'RU' }))
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Frontend-разработчик')

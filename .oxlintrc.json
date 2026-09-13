@@ -7,8 +7,19 @@
   },
   "rules": {
     "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }],
-    "react_perf/jsx-no-new-function-as-prop": "off"
+    "react/only-export-components": [
+      "warn",
+      {
+        "allowConstantExport": true
+      }
+    ],
+    "react_perf/jsx-no-new-function-as-prop": "off",
+    "typescript/consistent-type-imports": [
+      "error",
+      {
+        "fixStyle": "separate-type-imports"
+      }
+    ]
   },
   "ignorePatterns": ["dist", "node_modules", "coverage"]
 }

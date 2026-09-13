@@ -61,6 +61,13 @@
   margin-top: 32px;
 }
 
+.phone {
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #666;
+}
+
 @keyframes pulse {
   0%,
   100% {

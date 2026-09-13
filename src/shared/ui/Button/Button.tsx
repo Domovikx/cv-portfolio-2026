@@ -24,7 +24,13 @@ const SIZE_CLASS: Record<NonNullable<ButtonBaseProps['size']>, string> = {
   l: styles.sizeL,
 }
 
-export function Button({ variant = 'red', size = 'm', className, children, ...rest }: ButtonProps) {
+export const Button = ({
+  variant = 'red',
+  size = 'm',
+  className,
+  children,
+  ...rest
+}: ButtonProps) => {
   const classes = cn(styles.button, styles[variant], SIZE_CLASS[size], className)
 
   if (rest.href) {

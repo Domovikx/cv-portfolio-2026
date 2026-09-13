@@ -8,7 +8,7 @@ export type SectionTitleProps = {
   className?: string
 }
 
-export function SectionTitle({ title, subtitle, className }: SectionTitleProps) {
+export const SectionTitle = ({ title, subtitle, className }: SectionTitleProps) => {
   return (
     <div className={cn(styles.wrapper, className)}>
       <h2 className={styles.title}>{title}</h2>

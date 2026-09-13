@@ -6,7 +6,7 @@ import { Card, Chip, Container, Section, SectionTitle } from '@/shared/ui'
 
 import styles from './Experience.module.css'
 
-export function Experience() {
+export const Experience = () => {
   const { t } = useTranslation()
   const tc = useCvTranslation()
 

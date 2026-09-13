@@ -24,13 +24,13 @@
 
 ```
 src/
-  app/        провайдеры, глобальные стили, точка входа
+  app/        провайдеры, глобальные стили, точка входа, пасхалка (easter-egg)
   pages/      страницы (home)
   widgets/    блоки страницы: header, hero, about, stack, experience, projects, contacts, footer
-  features/   сценарии: language-switcher
+  features/   language-switcher, respond-form (RTK Query mutation), github-repos (RTK Query query), voice-intro (аудио-приветствие)
   entities/   данные CV: profile, skill, experience, project
-  shared/     config (i18n, site), lib (cn), ui (Button, Chip, Card, Container, Section, SectionTitle)
-locales/      ru.json (источник истины), en.json
+  shared/     config (i18n, site), api (RTK Query), lib (cn, useCvTranslation), ui (Button, Chip, Card, Container, Modal, Section, SectionTitle)
+locales/      ru.json (источник истины), en.json, de.json
 tests/        tests/components (рендер), tests/tools (интегритет данных и переводов)
 ```
 
@@ -43,6 +43,7 @@ Public API модуля — только через `index.ts`.
 npm run dev          # dev-сервер
 npm run check        # lint + format:check + fsd:check + test + build
 npm run fsd:check    # проверка архитектуры FSD
+npm run fsd:watch    # FSD-проверка в watch-режиме (при разработке)
 npm test             # тесты (Vitest)
 npm run deploy       # локальный деплой на gh-pages ветку
 ```

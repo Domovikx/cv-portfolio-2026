@@ -1,11 +1,14 @@
 import { describe, expect, it } from 'vitest'
 
+import de from '../../locales/de.json'
 import en from '../../locales/en.json'
 import ru from '../../locales/ru.json'
 import { experienceItems } from '@/entities/experience'
 import { profile } from '@/entities/profile'
 import { projects } from '@/entities/project'
 import { skillGroups } from '@/entities/skill'
+
+const LOCALES = { ru, en, de } as const
 
 type RecordValue = { [key: string]: unknown }
 
@@ -26,28 +29,31 @@ describe('CV data integrity (данные ↔ переводы)', () => {
     expect(profile.email).toMatch(/@/)
     expect(profile.github).toMatch(/^https:\/\//)
     expect(profile.resumeUrl).toMatch(/\.pdf/)
-    expect(typeof getByPath(ru, profile.roleKey)).toBe('string')
-    expect(typeof getByPath(en, profile.roleKey)).toBe('string')
+    for (const locale of Object.values(LOCALES)) {
+      expect(typeof getByPath(locale, profile.roleKey)).toBe('string')
+    }
   })
 
-  it('every experience item has translated role and text in both locales', () => {
+  it('every experience item has translated role and text in all locales', () => {
     expect(experienceItems.length).toBeGreaterThanOrEqual(3)
     for (const item of experienceItems) {
       expect(item.period).toBeTruthy()
       expect(item.tags.length).toBeGreaterThan(0)
       for (const key of [item.roleKey, item.textKey]) {
-        expect(typeof getByPath(ru, key), `ru missing key: ${key}`).toBe('string')
-        expect(typeof getByPath(en, key), `en missing key: ${key}`).toBe('string')
+        for (const [name, locale] of Object.entries(LOCALES)) {
+          expect(typeof getByPath(locale, key), `${name} missing key: ${key}`).toBe('string')
+        }
       }
     }
   })
 
-  it('every project has repo link and translated title in both locales', () => {
+  it('every project has repo link and translated title in all locales', () => {
     for (const project of projects) {
       expect(project.repoUrl).toMatch(/^https:\/\//)
       for (const key of [project.titleKey, project.textKey]) {
-        expect(typeof getByPath(ru, key), `ru missing key: ${key}`).toBe('string')
-        expect(typeof getByPath(en, key), `en missing key: ${key}`).toBe('string')
+        for (const [name, locale] of Object.entries(LOCALES)) {
+          expect(typeof getByPath(locale, key), `${name} missing key: ${key}`).toBe('string')
+        }
       }
     }
   })
@@ -55,8 +61,12 @@ describe('CV data integrity (данные ↔ переводы)', () => {
   it('every skill group has a translated name and non-empty items', () => {
     for (const group of skillGroups) {
       expect(group.items.length).toBeGreaterThan(0)
-      expect(typeof getByPath(ru, group.nameKey), `ru missing key: ${group.nameKey}`).toBe('string')
-      expect(typeof getByPath(en, group.nameKey), `en missing key: ${group.nameKey}`).toBe('string')
+      for (const [name, locale] of Object.entries(LOCALES)) {
+        expect(
+          typeof getByPath(locale, group.nameKey),
+          `${name} missing key: ${group.nameKey}`,
+        ).toBe('string')
+      }
     }
   })
 })

@@ -9,7 +9,7 @@ type AboutCard = {
   text: string
 }
 
-export function About() {
+export const About = () => {
   const { t } = useTranslation()
   const cards = t('about.cards', { returnObjects: true }) as unknown as AboutCard[]
 

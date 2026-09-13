@@ -15,6 +15,7 @@
     "roleAccent": "(React + Angular)",
     "subtitle": "A developer who loves frontend, design systems and clean code. I work with React and Angular, building complex forms, tables and filters. This site is a living portfolio: Feature-Sliced Design, design tokens, a micro UI-kit, i18n, tests and deployment via GitHub Actions.",
     "chips": ["React", "Angular", "TypeScript", "Vite", "Feature-Sliced Design"],
+    "listen": "Listen",
     "photoAlt": "Portrait of Ilya Ivanovsky — Frontend Developer (React + Angular)",
     "ctaPrimary": "Contact me",
     "ctaSecondary": "See projects"
@@ -22,7 +23,6 @@
   "about": {
     "title": "The best frontend is built with best practices",
     "text": "Frontend for me is not only code, but also architecture, tests and attention to UI details. Everything in this project is real: a working design system, strict linting and architecture checks.",
-    "photoAlt": "Portrait of DomovikX",
     "cards": [
       {
         "title": "Innovation is my job",
@@ -120,9 +120,38 @@
     "title": "Contact me",
     "text": "I respond to Frontend Developer (React + Angular) vacancies. Open to remote or hybrid work, ready to discuss complex forms, tables and internal systems.",
     "availability": "Open to offers",
-    "emailCta": "Email me",
+    "respondCta": "Apply now",
+    "telegramCta": "Telegram",
+    "emailCta": "Email",
     "githubCta": "GitHub",
     "resumeCta": "Download resume (PDF)"
+  },
+  "respondForm": {
+    "title": "Apply for the vacancy",
+    "name": "First name",
+    "surname": "Last name",
+    "email": "Email",
+    "phone": "Phone (optional)",
+    "resumeLink": "Resume link (optional)",
+    "consent": "I agree to the processing and use of my personal data",
+    "required": "Required field",
+    "emailInvalid": "Invalid email",
+    "linkInvalid": "Invalid link",
+    "consentRequired": "Consent is required",
+    "submit": "Send",
+    "sending": "Sending...",
+    "success": "Thank you! The demo application was sent — this is an RTK Query mutation with a real POST request.",
+    "error": "Something went wrong. Please try again.",
+    "close": "Close",
+    "hint": "Demo: the request goes to jsonplaceholder.typicode.com (public API)"
+  },
+  "githubRepos": {
+    "title": "My repositories (GitHub API)",
+    "cta": "Live list of repositories from GitHub API",
+    "loading": "Loading repositories...",
+    "empty": "Nothing here yet",
+    "error": "Failed to load (probably GitHub API rate limit exceeded).",
+    "retry": "Retry"
   },
   "footer": {
     "copyright": "© 2026 Ilya Ivanovsky",

@@ -65,6 +65,12 @@
   flex-grow: 1;
 }
 
+.liveBlock {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
 @media (max-width: 992px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);

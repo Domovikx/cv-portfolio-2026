@@ -8,7 +8,7 @@ import styles from './Header.module.css'
 
 const NAV_KEYS = ['about', 'stack', 'experience', 'projects', 'contacts'] as const
 
-export function Header() {
+export const Header = () => {
   const { t } = useTranslation()
 
   return (
@@ -18,7 +18,7 @@ export function Header() {
           <span className={styles.logoMark}>И</span>
           <span>{profile.name}</span>
         </a>
-        <nav className={styles.nav} aria-label="Main">
+        <nav className={styles.nav} aria-label="Main" data-testid="nav">
           {NAV_KEYS.map((key) => (
             <a key={key} className={styles.link} href={`#${key}`}>
               {t(`header.nav.${key}`)}
@@ -27,7 +27,9 @@ export function Header() {
         </nav>
         <div className={styles.actions}>
           <LanguageSwitcher />
-          <Button href="#contacts">{t('header.cta')}</Button>
+          <Button href={profile.telegram} target="_blank" rel="noreferrer">
+            {t('header.cta')}
+          </Button>
         </div>
       </Container>
     </header>

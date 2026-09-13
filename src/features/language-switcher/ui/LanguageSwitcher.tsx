@@ -6,7 +6,7 @@ import { cn } from '@/shared/lib'
 
 import styles from './LanguageSwitcher.module.css'
 
-export function LanguageSwitcher() {
+export const LanguageSwitcher = () => {
   const { i18n } = useTranslation()
   const current = i18n.resolvedLanguage as Lang
 
@@ -17,6 +17,7 @@ export function LanguageSwitcher() {
           key={lang}
           type="button"
           className={cn(styles.item, current === lang && styles.active)}
+          data-testid={`lang-${lang}`}
           onClick={() => setLang(lang)}
         >
           {lang.toUpperCase()}

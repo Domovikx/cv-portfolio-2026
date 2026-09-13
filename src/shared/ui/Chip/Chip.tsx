@@ -9,6 +9,6 @@ export type ChipProps = {
   className?: string
 }
 
-export function Chip({ children, className }: ChipProps) {
+export const Chip = ({ children, className }: ChipProps) => {
   return <span className={cn(styles.chip, className)}>{children}</span>
 }
