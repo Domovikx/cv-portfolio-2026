@@ -53,3 +53,8 @@
   padding: 14px 32px;
   font-size: 18px;
 }
+
+.button:disabled {
+  opacity: 0.55;
+  pointer-events: none;
+}

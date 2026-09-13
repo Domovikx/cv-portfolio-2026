@@ -35,6 +35,6 @@ export const experienceItems: ExperienceItem[] = [
     roleKey: 'experience.items.4.role',
     company: 'ITFB Group',
     textKey: 'experience.items.4.text',
-    tags: ['React', 'Redux Toolkit', 'TypeScript', 'Cypress'],
+    tags: ['React', 'Redux Toolkit', 'TypeScript', 'Cypress', 'Scrum'],
   },
 ]

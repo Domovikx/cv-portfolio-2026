@@ -85,11 +85,12 @@ const FONTS = [
 const CSS = `
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  @page { size: A4; margin: 10mm 13mm; }
   body {
     font-family: 'Montserrat PDF', 'Segoe UI', 'Microsoft YaHei', sans-serif;
     color: #2c2c2c; font-size: 8.3pt; line-height: 1.28;
   }
-  .page { width: 210mm; min-height: 297mm; padding: 10mm 13mm; }
+  .page { width: 100%; }
   .header { display: flex; justify-content: space-between; gap: 20px; margin-bottom: 3mm; }
   .header-main h1 { font-weight: 800; font-size: 17pt; letter-spacing: 0.5px; }
   .header-main .role { font-weight: 800; color: #ef3124; font-size: 10.5pt; margin-top: 1mm; }
@@ -118,7 +119,7 @@ const CSS = `
   .exp-company { color: #777; font-size: 8.2pt; }
   .exp-text { color: #444; margin-top: 0.5mm; }
   .exp .chips { margin-top: 0.6mm; }
-  .projects { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; }
+  .projects { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; break-inside: avoid; }
   .project {
     border: 0.5pt solid #ececec; border-radius: 2.5mm; padding: 2mm 2.5mm; background: #fafafa;
   }
@@ -133,6 +134,8 @@ const CSS = `
   .section-title, .section-rule, .exp-period { break-after: avoid; }
   .exp-role, .exp-company { break-after: avoid; }
   p, li { orphans: 3; widows: 3; }
+  /* явное разделение на две страницы */
+  .pagebreak { page-break-before: always; break-before: page; }
 `
 
 const chipsHtml = (tags: string[]): string =>
@@ -225,7 +228,9 @@ const buildHtml = (lang: string): string => {
       <div class="section-rule"></div>
       ${expHtml}
     </div>
+  </div>
 
+  <div class="page pagebreak">
     <div class="section">
       <div class="section-title">${escapeHtml(t(lang, 'resume.projects'))}</div>
       <div class="section-rule"></div>

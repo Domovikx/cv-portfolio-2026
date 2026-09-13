@@ -7,10 +7,7 @@ import '@fontsource/montserrat/900.css'
 import './styles/tokens.css'
 import './styles/global.css'
 import App from './App'
-import { initEasterEgg } from './easter-egg'
 import { AppProviders } from './providers'
-
-initEasterEgg()
 
 const rootElement = document.getElementById('root')
 

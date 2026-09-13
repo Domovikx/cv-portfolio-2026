@@ -31,9 +31,15 @@ export const GithubRepos = ({ open, onClose }: GithubReposProps) => {
       onClose={onClose}
     >
       {isLoading ? (
-        <div className={styles.status}>
-          <span className={styles.spinner} aria-hidden="true" />
-          <p>{t('githubRepos.loading')}</p>
+        <div className={styles.skeletons} aria-busy="true">
+          <span className={styles.srOnly}>{t('githubRepos.loading')}</span>
+          {Array.from({ length: 5 }, (_, index) => (
+            <div key={index} className={styles.skeletonCard} aria-hidden="true">
+              <div className={`${styles.skeletonLine} ${styles.skeletonTitle}`} />
+              <div className={styles.skeletonLine} />
+              <div className={`${styles.skeletonLine} ${styles.skeletonShort}`} />
+            </div>
+          ))}
         </div>
       ) : isError || !repos ? (
         <div className={styles.status}>

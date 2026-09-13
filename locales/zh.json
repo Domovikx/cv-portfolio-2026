@@ -76,7 +76,7 @@
       },
       {
         "role": "前端开发工程师",
-        "text": "SPA「PPRB 股票产品」：微服务架构、Cypress 测试、Scrum 大师职责。React、Redux Toolkit。"
+        "text": "SPA「PPRB 股票产品」：微服务架构、Cypress 测试。开发与 Scrum 大师职责结合：每日站会、回顾、维护产品待办列表。React、Redux Toolkit。"
       }
     ],
     "present": "至今"
@@ -155,7 +155,7 @@
   },
   "profile": {
     "role": "前端开发工程师 (React + Angular)",
-    "location": "维捷布斯克，白俄罗斯 · 远程"
+    "location": "俄罗斯，莫斯科"
   },
   "resume": {
     "location": "莫斯科 · 远程办公",
@@ -200,5 +200,10 @@
         "place": "课程"
       }
     ]
+  },
+  "resumeDownload": {
+    "success": "简历已下载",
+    "open": "打开",
+    "error": "简历下载失败"
   }
 }

@@ -1,17 +1,16 @@
 import { useTranslation } from 'react-i18next'
 
-import { profile, resumeFiles } from '@/entities/profile'
+import { profile } from '@/entities/profile'
+import { ResumeDownloadButton } from '@/features/resume-download'
 import { VoiceIntro } from '@/features/voice-intro'
-import type { Lang } from '@/shared/config'
 import { Button, Chip, Container } from '@/shared/ui'
 
 import portrait from './portrait.webp'
 import styles from './Hero.module.css'
 
 export const Hero = () => {
-  const { t, i18n } = useTranslation()
+  const { t } = useTranslation()
   const chips = t('hero.chips', { returnObjects: true }) as string[]
-  const lang = i18n.language as Lang
 
   return (
     <section id="top" className={styles.hero}>
@@ -43,30 +42,7 @@ export const Hero = () => {
             >
               {t('hero.ctaPrimary')}
             </Button>
-            <Button
-              href={resumeFiles[lang]}
-              variant="white"
-              size="l"
-              className={styles.actionBtn}
-              download={`Ivanovsky-Ilya-${lang}.pdf`}
-            >
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                aria-hidden="true"
-              >
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                <path d="m7 10 5 5 5-5" />
-                <path d="M12 15V3" />
-              </svg>
-              {t('contacts.resumeCta')}
-            </Button>
+            <ResumeDownloadButton size="l" variant="white" className={styles.actionBtn} />
             <Button href="#projects" variant="ghost" size="l" className={styles.actionBtn}>
               {t('hero.ctaSecondary')}
             </Button>

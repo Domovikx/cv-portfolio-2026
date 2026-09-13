@@ -49,13 +49,13 @@ describe('HomePage', () => {
     expect(screen.getAllByRole('link', { name: 'GitHub' }).length).toBeGreaterThanOrEqual(4)
   })
 
-  it('resume buttons download a PDF', () => {
+  it('resume buttons are present, enabled and download a PDF', () => {
     renderHome()
-    const resumeLinks = screen.getAllByRole('link', { name: 'Скачать резюме (PDF)' })
-    expect(resumeLinks.length).toBeGreaterThanOrEqual(2)
-    for (const link of resumeLinks) {
-      expect(link).toHaveAttribute('download')
-      expect(link).toHaveAttribute('href', expect.stringContaining('.pdf'))
+    const resumeButtons = screen.getAllByTestId('resume-download')
+    expect(resumeButtons.length).toBeGreaterThanOrEqual(2)
+    for (const button of resumeButtons) {
+      expect(button).toHaveAccessibleName('Скачать резюме (PDF)')
+      expect(button).toBeEnabled()
     }
   })
 

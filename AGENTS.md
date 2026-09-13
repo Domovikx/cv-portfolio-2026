@@ -74,3 +74,4 @@ Git: DomovikX / domovikx@gmail.com. Реальные ссылки на прое�
 дизайн-токенами, Montserrat из @fontsource). После правки контента CV
 перегенерируй: `node tools/make_resume_pdf.mts` (или `npm run make:resume`).
 Нужен `npm i -D playwright` + `npx playwright install chromium`.
+Проверка вёрстки: `python tools/check_resume_pdf.py` (pypdf + pypdfium2).

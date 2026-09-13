@@ -76,7 +76,7 @@
       },
       {
         "role": "Frontend-Entwickler",
-        "text": "SPA „PPRB Aktienprodukte“: Microservice-Architektur, Cypress-Tests, Scrum-Master-Aufgaben. React, Redux Toolkit."
+        "text": "SPA „PPRB Aktienprodukte“: Microservice-Architektur, Cypress-Tests. Ich verbinde Entwicklung mit Scrum-Mastering: Dailys, Retros, Backlog-Pflege. React, Redux Toolkit."
       }
     ],
     "present": "aktuell"
@@ -155,7 +155,7 @@
   },
   "profile": {
     "role": "Frontend-Entwickler (React + Angular)",
-    "location": "Wizebsk, Belarus · Remote"
+    "location": "Russland, Moskau"
   },
   "resume": {
     "location": "Moskau · Remote-Arbeit",
@@ -200,5 +200,10 @@
         "place": "Kurse"
       }
     ]
+  },
+  "resumeDownload": {
+    "success": "Lebenslauf heruntergeladen",
+    "open": "Öffnen",
+    "error": "Lebenslauf konnte nicht heruntergeladen werden"
   }
 }

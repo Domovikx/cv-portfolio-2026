@@ -76,7 +76,7 @@
       },
       {
         "role": "Frontend developer",
-        "text": "SPA \"PPRB Equity Products\": microservice architecture, Cypress tests, scrum master duties. React, Redux Toolkit."
+        "text": "SPA \"PPRB Equity Products\": microservice architecture, Cypress tests. I combine development with scrum mastering: daily stand-ups, retros, backlog grooming. React, Redux Toolkit."
       }
     ],
     "present": "present"
@@ -155,7 +155,7 @@
   },
   "profile": {
     "role": "Frontend Developer (React + Angular)",
-    "location": "Vitebsk, Belarus · remote"
+    "location": "Russia, Moscow"
   },
   "resume": {
     "location": "Moscow · remote work",
@@ -200,5 +200,10 @@
         "place": "Courses"
       }
     ]
+  },
+  "resumeDownload": {
+    "success": "Resume downloaded",
+    "open": "Open",
+    "error": "Failed to download the resume"
   }
 }

@@ -16,6 +16,12 @@ export type ModalProps = PropsWithChildren<{
 
 export const Modal = ({ open, title, onClose, className, dataTestId, children }: ModalProps) => {
   const dialogRef = useRef<HTMLDialogElement>(null)
+  // Стабильный доступ к onClose: инлайн-стрелки родителей не вызывают
+  // переподписку эффекта на каждом рендере (аналог useCallback без мемоизации у родителя)
+  const onCloseRef = useRef(onClose)
+  useEffect(() => {
+    onCloseRef.current = onClose
+  })
 
   useEffect(() => {
     const dialog = dialogRef.current
@@ -30,23 +36,23 @@ export const Modal = ({ open, title, onClose, className, dataTestId, children }:
     const previousOverflow = document.body.style.overflow
     document.body.style.overflow = 'hidden'
 
-    const handleClose = () => onClose()
+    const handleClose = () => onCloseRef.current()
     dialog.addEventListener('close', handleClose)
 
     return () => {
       dialog.removeEventListener('close', handleClose)
       document.body.style.overflow = previousOverflow
     }
-  }, [open, onClose])
+  }, [open])
 
   if (!open) return null
 
   const handleBackdropClick = (event: MouseEvent<HTMLDialogElement>) => {
-    if (event.target === dialogRef.current) onClose()
+    if (event.target === dialogRef.current) onCloseRef.current()
   }
 
   const handleKeyDown = (event: KeyboardEvent<HTMLDialogElement>) => {
-    if (event.key === 'Escape') onClose()
+    if (event.key === 'Escape') onCloseRef.current()
   }
 
   return createPortal(
@@ -66,7 +72,7 @@ export const Modal = ({ open, title, onClose, className, dataTestId, children }:
           className={styles.close}
           aria-label="Close"
           data-testid="modal-close"
-          onClick={onClose}
+          onClick={() => onCloseRef.current()}
         >
           <svg
             width="14"

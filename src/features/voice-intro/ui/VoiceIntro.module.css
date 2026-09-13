@@ -22,7 +22,8 @@
   color: var(--alfa-red);
 }
 
-.playing {
+.playing,
+.playing:hover {
   border-color: var(--alfa-red);
   background-color: var(--alfa-red);
   color: var(--alfa-white);
@@ -43,6 +44,10 @@
 .playing .icon {
   background-color: var(--alfa-white);
   color: var(--alfa-red);
+}
+
+.label {
+  white-space: nowrap;
 }
 
 .label {
