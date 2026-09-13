@@ -1,4 +1,3 @@
-import resume from './resume.pdf'
 import type { Profile } from './types'
 
 export const profile: Profile = {
@@ -10,5 +9,4 @@ export const profile: Profile = {
   phone: '+375 25 988-77-66',
   telegram: 'https://t.me/Domovikx',
   github: 'https://github.com/DomovikX',
-  resumeUrl: resume,
 }

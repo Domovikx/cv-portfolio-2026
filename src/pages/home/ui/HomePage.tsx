@@ -1,5 +1,6 @@
 import { About } from '@/widgets/about'
 import { Contacts } from '@/widgets/contacts'
+import { Education } from '@/widgets/education'
 import { Experience } from '@/widgets/experience'
 import { Footer } from '@/widgets/footer'
 import { Header } from '@/widgets/header'
@@ -16,6 +17,7 @@ export const HomePage = () => {
         <About />
         <Stack />
         <Experience />
+        <Education />
         <Projects />
         <Contacts />
       </main>

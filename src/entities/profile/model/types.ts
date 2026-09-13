@@ -9,5 +9,4 @@ export type Profile = {
   phone: string
   telegram: string
   github: string
-  resumeUrl: string
 }

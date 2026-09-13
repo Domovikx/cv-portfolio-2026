@@ -1,15 +1,17 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
-import { profile } from '@/entities/profile'
+import { profile, resumeFiles } from '@/entities/profile'
 import { RespondForm } from '@/features/respond-form'
+import type { Lang } from '@/shared/config'
 import { Button, Container, Section } from '@/shared/ui'
 
 import styles from './Contacts.module.css'
 
 export const Contacts = () => {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const [respondOpen, setRespondOpen] = useState(false)
+  const lang = i18n.language as Lang
 
   return (
     <Section id="contacts" variant="gray">
@@ -48,10 +50,10 @@ export const Contacts = () => {
             {t('contacts.githubCta')}
           </Button>
           <Button
-            href={profile.resumeUrl}
+            href={resumeFiles[lang]}
             variant="white"
             size="l"
-            download="Ivanovsky-Ilya-resume.pdf"
+            download={`Ivanovsky-Ilya-${lang}.pdf`}
           >
             {t('contacts.resumeCta')}
           </Button>

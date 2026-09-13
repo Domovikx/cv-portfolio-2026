@@ -1,4 +1,5 @@
 {
+  "window.title": "${dirty}${rootNameShort}",
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {
@@ -10,18 +11,5 @@
   },
   "cSpell.language": "en,ru",
   "cSpell.enabled": true,
-  "cSpell.words": [
-    "alfa",
-    "alfabank",
-    "DomovikX",
-    "domovikx",
-    "i18next",
-    "i18n",
-    "opencode",
-    "oxlint",
-    "Ren'Py",
-    "steiger",
-    "vitest"
-  ],
   "vitest.enable": true
 }

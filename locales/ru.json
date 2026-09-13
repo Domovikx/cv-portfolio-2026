@@ -5,7 +5,8 @@
       "stack": "Стек",
       "experience": "Опыт",
       "projects": "Проекты",
-      "contacts": "Контакты"
+      "contacts": "Контакты",
+      "education": "Образование"
     },
     "cta": "Связаться"
   },
@@ -58,27 +59,27 @@
     "subtitle": "Опыт и ключевые этапы",
     "items": [
       {
-        "period": "2020 — 2021",
-        "role": "Изучение JavaScript, курс Andersen",
-        "company": "Andersen JS Course",
-        "text": "Интенсив по JavaScript: структуры данных, async, DOM, основы React. Первые тестовые задания: CRM на Vue + Firebase (диплом), магазин на React, игра на развитие внимания.",
-        "tags": ["JavaScript", "React", "Vue", "Firebase"]
+        "role": "Frontend-разработчик",
+        "text": "PWA-приложение (интервью-хелпер) на Vue: структура, страницы, внедрение новых функций. Vuex, Vuetify, Firebase."
       },
       {
-        "period": "2021 — 2023",
-        "role": "Frontend-разработчик (self-study)",
-        "company": "Pet-проекты и курсовая",
-        "text": "Тестовые задания и учебные проекты: приложение на React с Firebase-бэкендом, курсовая на Angular 8 с роутингом и вёрсткой. Прошёл Rolling Scopes School.",
-        "tags": ["React", "Angular", "TypeScript"]
+        "role": "Программист",
+        "text": "CRM (SPA) на Angular: новые функции и компоненты, модульные тесты. RxJS, Redux, Jasmine."
       },
       {
-        "period": "2023 — 2026",
-        "role": "Интерфейсы и AI-инструменты",
-        "company": "Pet-проекты, open source",
-        "text": "Локализация и AI-озвучка игры (Ren'Py, Qwen voice cloning, ~67 тыс. реплик), инструменты автоматизации на Python, разработка с помощью opencode и локальных LLM.",
-        "tags": ["AI", "TTS", "Python", "Ren'Py", "opencode"]
+        "role": "Frontend-разработчик",
+        "text": "Внутренний складской учёт: структура, страницы, защита роутов, интеграция с базой. React, MongoDB, Heroku."
+      },
+      {
+        "role": "Программист",
+        "text": "SPA «ППРБ Акционерные продукты»: разработка компонентов, поддержка функционала, Agile (Scrum). React, Redux Toolkit."
+      },
+      {
+        "role": "Frontend-разработчик",
+        "text": "SPA «ППРБ Акционерные продукты»: микро-сервисная архитектура, тесты Cypress, роль скрам-мастера. React, Redux Toolkit."
       }
-    ]
+    ],
+    "present": "настоящее время"
   },
   "projects": {
     "title": "Проекты",
@@ -91,27 +92,27 @@
       },
       {
         "title": "angular-nabludenie-by",
-        "text": "Курсовой проект на Angular 8: роутинг, вёрстка, работа с данными. Размещён на GitHub Pages.",
+        "text": "Курсовая на Angular 8: роутинг, вёрстка, работа с данными. GitHub Pages.",
         "tags": ["Angular", "TypeScript", "GitHub Pages"]
       },
       {
         "title": "react-todo-list",
-        "text": "Первая работа на React: todo-приложение с хранением состояния, опубликовано на GitHub Pages.",
+        "text": "Первая работа на React: todo-приложение, опубликовано на GitHub Pages.",
         "tags": ["React", "JavaScript"]
       },
       {
         "title": "react_tz_2021",
-        "text": "Тестовое задание на React: интеграция с REST-бэкендом, развёрнуто на Firebase Hosting.",
+        "text": "Тестовое задание на React: интеграция с REST-бэкендом, Firebase Hosting.",
         "tags": ["React", "REST API", "Firebase"]
       },
       {
         "title": "react_maze",
-        "text": "Тестовое задание: игра на развитие внимания с пошаговой навигацией по лабиринту.",
+        "text": "Тестовое задание: игра на развитие внимания с навигацией по лабиринту.",
         "tags": ["React", "Game"]
       },
       {
         "title": "The Survival of Sarah Rose",
-        "text": "Русский перевод игры и полная AI-озвучка ~67 тыс. реплик: инструменты генерации, каталогизация, чистка аудио.",
+        "text": "Русский перевод игры и AI-озвучка ~67 тыс. реплик: генерация, каталогизация, чистка аудио.",
         "tags": ["Ren'Py", "Python", "AI", "TTS"]
       }
     ]
@@ -160,6 +161,50 @@
   },
   "profile": {
     "role": "Frontend-разработчик (React + Angular)",
-    "location": "Удалённо / гибрид"
+    "location": "Витебск, Беларусь · удалённо"
+  },
+  "resume": {
+    "location": "Москва · удалённая работа",
+    "about": "О себе",
+    "skills": "Навыки",
+    "experience": "Опыт работы",
+    "projects": "Проекты",
+    "education": "Образование",
+    "links": "Ссылки",
+    "languagesTitle": "Языки",
+    "summary": "Фронтенд-разработчик (React, Angular, Vue) с коммерческим опытом с 2018 года: финтех-SPA, сложные формы и таблицы, микро-сервисы, тесты (Cypress, Jasmine), Scrum. Строгая типизация, Feature-Sliced Design, AI-инструменты.",
+    "educationItems": [
+      "ВГТУ, Витебск — инженер-программист, ПО информационных систем, 2020",
+      "ВГТУ, Витебск — инженер-технолог, машиностроение, 2006",
+      "Andersen Lab — Frontend, 2020",
+      "Rolling Scopes School — Frontend JavaScript, 2019"
+    ],
+    "languages": ["Русский — родной", "Английский — A2 (элементарный)"]
+  },
+  "education": {
+    "title": "Образование",
+    "subtitle": "Высшее и курсы",
+    "items": [
+      {
+        "period": "2020",
+        "degree": "Высшее: инженер-программист",
+        "place": "ВГТУ, Витебск — программное обеспечение информационных систем"
+      },
+      {
+        "period": "2006",
+        "degree": "Высшее: инженер-технолог",
+        "place": "ВГТУ, Витебск — машиностроение"
+      },
+      {
+        "period": "2020",
+        "degree": "Andersen Lab — Frontend",
+        "place": "Курсы"
+      },
+      {
+        "period": "2019",
+        "degree": "Rolling Scopes School — Frontend JavaScript",
+        "place": "Курсы"
+      }
+    ]
   }
 }

@@ -5,7 +5,8 @@
       "stack": "技术栈",
       "experience": "经验",
       "projects": "项目",
-      "contacts": "联系方式"
+      "contacts": "联系方式",
+      "education": "教育"
     },
     "cta": "联系我"
   },
@@ -58,27 +59,27 @@
     "subtitle": "经验和关键阶段",
     "items": [
       {
-        "period": "2020 — 2021",
-        "role": "学习 JavaScript，Andersen 课程",
-        "company": "Andersen JS Course",
-        "text": "JavaScript 强化课程：数据结构、异步、DOM、React 基础。第一批测试任务：基于 Vue + Firebase 的 CRM（毕业项目）、React 商城、注意力训练游戏。",
-        "tags": ["JavaScript", "React", "Vue", "Firebase"]
+        "role": "前端开发工程师",
+        "text": "基于 Vue 的 PWA（面试助手）：结构、页面、新功能。Vuex、Vuetify、Firebase。"
       },
       {
-        "period": "2021 — 2023",
-        "role": "前端开发工程师（自学）",
-        "company": "个人项目和课程作业",
-        "text": "测试任务和学习项目：带 Firebase 后端的 React 应用、带路由和布局的 Angular 8 课程作业。完成了 Rolling Scopes School。",
-        "tags": ["React", "Angular", "TypeScript"]
+        "role": "程序员",
+        "text": "基于 Angular 的 CRM（SPA）：新功能和组件、单元测试。RxJS、Redux、Jasmine。"
       },
       {
-        "period": "2023 — 2026",
-        "role": "界面与 AI 工具",
-        "company": "个人项目，开源",
-        "text": "游戏本地化和 AI 配音（Ren'Py、Qwen 声音克隆，约 6.7 万句台词）、Python 自动化工具、使用 opencode 和本地 LLM 开发。",
-        "tags": ["AI", "TTS", "Python", "Ren'Py", "opencode"]
+        "role": "前端开发工程师",
+        "text": "内部仓库管理系统：结构、页面、路由守卫、数据库集成。React、MongoDB、Heroku。"
+      },
+      {
+        "role": "程序员",
+        "text": "SPA「PPRB 股票产品」：组件开发、功能维护、Agile（Scrum）。React、Redux Toolkit。"
+      },
+      {
+        "role": "前端开发工程师",
+        "text": "SPA「PPRB 股票产品」：微服务架构、Cypress 测试、Scrum 大师职责。React、Redux Toolkit。"
       }
-    ]
+    ],
+    "present": "至今"
   },
   "projects": {
     "title": "项目",
@@ -91,27 +92,27 @@
       },
       {
         "title": "angular-nabludenie-by",
-        "text": "Angular 8 课程作业：路由、布局、数据处理。托管在 GitHub Pages 上。",
+        "text": "Angular 8 课程作业：路由、布局、数据处理。GitHub Pages。",
         "tags": ["Angular", "TypeScript", "GitHub Pages"]
       },
       {
         "title": "react-todo-list",
-        "text": "第一份 React 作品：带状态管理的待办应用，发布在 GitHub Pages 上。",
+        "text": "第一份 React 作品：待办应用，发布在 GitHub Pages 上。",
         "tags": ["React", "JavaScript"]
       },
       {
         "title": "react_tz_2021",
-        "text": "React 测试任务：与 REST 后端集成，部署在 Firebase Hosting 上。",
+        "text": "React 测试任务：REST 后端集成，Firebase Hosting。",
         "tags": ["React", "REST API", "Firebase"]
       },
       {
         "title": "react_maze",
-        "text": "测试任务：一个带迷宫分步导航的注意力训练游戏。",
+        "text": "测试任务：带迷宫导航的注意力训练游戏。",
         "tags": ["React", "Game"]
       },
       {
         "title": "The Survival of Sarah Rose",
-        "text": "游戏俄语本地化和约 6.7 万句台词的完整 AI 配音：生成工具、目录管理、音频清理。",
+        "text": "游戏俄语本地化和约 6.7 万句台词的 AI 配音：生成、目录管理、音频清理。",
         "tags": ["Ren'Py", "Python", "AI", "TTS"]
       }
     ]
@@ -160,6 +161,50 @@
   },
   "profile": {
     "role": "前端开发工程师 (React + Angular)",
-    "location": "远程 / 混合"
+    "location": "维捷布斯克，白俄罗斯 · 远程"
+  },
+  "resume": {
+    "location": "莫斯科 · 远程办公",
+    "about": "关于我",
+    "skills": "技能",
+    "experience": "工作经历",
+    "projects": "项目",
+    "education": "教育",
+    "links": "链接",
+    "languagesTitle": "语言",
+    "summary": "前端开发工程师（React、Angular、Vue），自 2018 年起拥有商业经验：金融科技 SPA、复杂表单和表格、微服务、测试（Cypress、Jasmine）、Scrum。严格类型检查、Feature-Sliced Design、AI 工具。",
+    "educationItems": [
+      "维捷布斯克国立技术大学 — 软件工程师，信息系统，2020",
+      "维捷布斯克国立技术大学 — 工艺工程师，机械工程，2006",
+      "Andersen Lab — 前端，2020",
+      "Rolling Scopes School — 前端 JavaScript，2019"
+    ],
+    "languages": ["俄语 — 母语", "英语 — A2（基础）"]
+  },
+  "education": {
+    "title": "教育",
+    "subtitle": "高等教育和课程",
+    "items": [
+      {
+        "period": "2020",
+        "degree": "高等教育：软件工程师",
+        "place": "维捷布斯克国立技术大学 — 信息系统软件"
+      },
+      {
+        "period": "2006",
+        "degree": "高等教育：工艺工程师",
+        "place": "维捷布斯克国立技术大学 — 机械工程"
+      },
+      {
+        "period": "2020",
+        "degree": "Andersen Lab — 前端",
+        "place": "课程"
+      },
+      {
+        "period": "2019",
+        "degree": "Rolling Scopes School — 前端 JavaScript",
+        "place": "课程"
+      }
+    ]
   }
 }

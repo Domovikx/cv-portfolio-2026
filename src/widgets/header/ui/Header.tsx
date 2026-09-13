@@ -6,7 +6,7 @@ import { Button, Container } from '@/shared/ui'
 
 import styles from './Header.module.css'
 
-const NAV_KEYS = ['about', 'stack', 'experience', 'projects', 'contacts'] as const
+const NAV_KEYS = ['about', 'stack', 'experience', 'education', 'projects', 'contacts'] as const
 
 export const Header = () => {
   const { t } = useTranslation()

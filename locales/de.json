@@ -5,7 +5,8 @@
       "stack": "Stack",
       "experience": "Erfahrung",
       "projects": "Projekte",
-      "contacts": "Kontakt"
+      "contacts": "Kontakt",
+      "education": "Bildung"
     },
     "cta": "Kontakt"
   },
@@ -58,27 +59,27 @@
     "subtitle": "Erfahrung und wichtige Meilensteine",
     "items": [
       {
-        "period": "2020 — 2021",
-        "role": "JavaScript lernen, Andersen-Kurs",
-        "company": "Andersen JS Course",
-        "text": "Intensivkurs JavaScript: Datenstrukturen, Async, DOM, React-Grundlagen. Erste Testaufgaben: CRM auf Vue + Firebase (Diplom), ein Shop auf React, ein Aufmerksamkeitsspiel.",
-        "tags": ["JavaScript", "React", "Vue", "Firebase"]
+        "role": "Frontend-Entwickler",
+        "text": "PWA (Interview-Helfer) in Vue: Struktur, Seiten, neue Funktionen. Vuex, Vuetify, Firebase."
       },
       {
-        "period": "2021 — 2023",
-        "role": "Frontend-Entwickler (Self-Study)",
-        "company": "Pet-Projekte und Kursarbeit",
-        "text": "Testaufgaben und Lernprojekte: eine React-App mit Firebase-Backend, eine Angular-8-Kursarbeit mit Routing und Layout. Rolling Scopes School abgeschlossen.",
-        "tags": ["React", "Angular", "TypeScript"]
+        "role": "Programmierer",
+        "text": "CRM (SPA) in Angular: neue Funktionen und Komponenten, Modultests. RxJS, Redux, Jasmine."
       },
       {
-        "period": "2023 — 2026",
-        "role": "Schnittstellen und KI-Tools",
-        "company": "Pet-Projekte, Open Source",
-        "text": "Spiel-Lokalisierung und KI-Synchronisation (Ren'Py, Qwen Voice Cloning, ~67 Tsd. Zeilen), Python-Automatisierung, Entwicklung mit opencode und lokalen LLMs.",
-        "tags": ["KI", "TTS", "Python", "Ren'Py", "opencode"]
+        "role": "Frontend-Entwickler",
+        "text": "Internes Lagerverwaltungssystem: Struktur, Seiten, Routenschutz, Datenbankanbindung. React, MongoDB, Heroku."
+      },
+      {
+        "role": "Programmierer",
+        "text": "SPA „PPRB Aktienprodukte“: Komponentenentwicklung, Funktionspflege, Agile (Scrum). React, Redux Toolkit."
+      },
+      {
+        "role": "Frontend-Entwickler",
+        "text": "SPA „PPRB Aktienprodukte“: Microservice-Architektur, Cypress-Tests, Scrum-Master-Aufgaben. React, Redux Toolkit."
       }
-    ]
+    ],
+    "present": "aktuell"
   },
   "projects": {
     "title": "Projekte",
@@ -91,27 +92,27 @@
       },
       {
         "title": "angular-nabludenie-by",
-        "text": "Angular-8-Kursarbeit: Routing, Layout, Datenverarbeitung. Gehostet auf GitHub Pages.",
+        "text": "Angular-8-Kursarbeit: Routing, Layout, Datenverarbeitung. GitHub Pages.",
         "tags": ["Angular", "TypeScript", "GitHub Pages"]
       },
       {
         "title": "react-todo-list",
-        "text": "Erste React-Arbeit: Todo-App mit State-Management, veröffentlicht auf GitHub Pages.",
+        "text": "Erste React-Arbeit: Todo-App, veröffentlicht auf GitHub Pages.",
         "tags": ["React", "JavaScript"]
       },
       {
         "title": "react_tz_2021",
-        "text": "React-Testaufgabe: Integration mit einem REST-Backend, deployed auf Firebase Hosting.",
+        "text": "React-Testaufgabe: REST-Backend-Integration, Firebase Hosting.",
         "tags": ["React", "REST API", "Firebase"]
       },
       {
         "title": "react_maze",
-        "text": "Testaufgabe: ein Aufmerksamkeitstraining-Spiel mit schrittweiser Labyrinth-Navigation.",
+        "text": "Testaufgabe: ein Aufmerksamkeitsspiel mit Labyrinth-Navigation.",
         "tags": ["React", "Game"]
       },
       {
         "title": "The Survival of Sarah Rose",
-        "text": "Russische Spielübersetzung und vollständige KI-Synchronisation von ~67 Tsd. Zeilen: Generierungstools, Katalogisierung, Audio-Reinigung.",
+        "text": "Russische Spielübersetzung und KI-Synchronisation von ~67 Tsd. Zeilen: Generierung, Katalogisierung, Audio-Reinigung.",
         "tags": ["Ren'Py", "Python", "KI", "TTS"]
       }
     ]
@@ -160,6 +161,50 @@
   },
   "profile": {
     "role": "Frontend-Entwickler (React + Angular)",
-    "location": "Remote / hybrid"
+    "location": "Wizebsk, Belarus · Remote"
+  },
+  "resume": {
+    "location": "Moskau · Remote-Arbeit",
+    "about": "Über mich",
+    "skills": "Fähigkeiten",
+    "experience": "Berufserfahrung",
+    "projects": "Projekte",
+    "education": "Bildung",
+    "links": "Links",
+    "languagesTitle": "Sprachen",
+    "summary": "Frontend-Entwickler (React, Angular, Vue) mit kommerzieller Erfahrung seit 2018: Fintech-SPA, komplexe Formulare und Tabellen, Microservices, Tests (Cypress, Jasmine), Scrum. Strikte Typisierung, Feature-Sliced Design, KI-Tools.",
+    "educationItems": [
+      "WSTU, Wizebsk — Software-Ingenieur, Informationssysteme, 2020",
+      "WSTU, Wizebsk — Fertigungsingenieur, Maschinenbau, 2006",
+      "Andersen Lab — Frontend, 2020",
+      "Rolling Scopes School — Frontend JavaScript, 2019"
+    ],
+    "languages": ["Russisch — Muttersprache", "Englisch — A2 (Grundlagen)"]
+  },
+  "education": {
+    "title": "Bildung",
+    "subtitle": "Studium und Kurse",
+    "items": [
+      {
+        "period": "2020",
+        "degree": "Hochschulabschluss: Software-Ingenieur",
+        "place": "WSTU, Wizebsk — Software für Informationssysteme"
+      },
+      {
+        "period": "2006",
+        "degree": "Hochschulabschluss: Fertigungsingenieur",
+        "place": "WSTU, Wizebsk — Maschinenbau"
+      },
+      {
+        "period": "2020",
+        "degree": "Andersen Lab — Frontend",
+        "place": "Kurse"
+      },
+      {
+        "period": "2019",
+        "degree": "Rolling Scopes School — Frontend JavaScript",
+        "place": "Kurse"
+      }
+    ]
   }
 }

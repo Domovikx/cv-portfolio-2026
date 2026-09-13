@@ -28,6 +28,7 @@ describe('HomePage', () => {
       ['Обо мне', '#about'],
       ['Стек', '#stack'],
       ['Опыт', '#experience'],
+      ['Образование', '#education'],
       ['Проекты', '#projects'],
       ['Контакты', '#contacts'],
     ]
@@ -38,7 +39,7 @@ describe('HomePage', () => {
 
   it('renders all CV sections', () => {
     renderHome()
-    for (const id of ['about', 'stack', 'experience', 'projects', 'contacts']) {
+    for (const id of ['about', 'stack', 'experience', 'education', 'projects', 'contacts']) {
       expect(document.getElementById(id)).not.toBeNull()
     }
   })

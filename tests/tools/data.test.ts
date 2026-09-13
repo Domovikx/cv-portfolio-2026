@@ -5,7 +5,7 @@ import en from '../../locales/en.json'
 import ru from '../../locales/ru.json'
 import zh from '../../locales/zh.json'
 import { experienceItems } from '@/entities/experience'
-import { profile } from '@/entities/profile'
+import { profile, resumeFiles } from '@/entities/profile'
 import { projects } from '@/entities/project'
 import { skillGroups } from '@/entities/skill'
 
@@ -29,7 +29,9 @@ describe('CV data integrity (данные ↔ переводы)', () => {
     expect(profile.fullName).toContain('Ивановский')
     expect(profile.email).toMatch(/@/)
     expect(profile.github).toMatch(/^https:\/\//)
-    expect(profile.resumeUrl).toMatch(/\.pdf/)
+    for (const [lang, url] of Object.entries(resumeFiles)) {
+      expect(url, `resume-${lang}`).toMatch(/\.pdf$/)
+    }
     for (const locale of Object.values(LOCALES)) {
       expect(typeof getByPath(locale, profile.roleKey)).toBe('string')
     }

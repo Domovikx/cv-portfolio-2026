@@ -5,7 +5,8 @@
       "stack": "Stack",
       "experience": "Experience",
       "projects": "Projects",
-      "contacts": "Contacts"
+      "contacts": "Contacts",
+      "education": "Education"
     },
     "cta": "Contact me"
   },
@@ -58,27 +59,27 @@
     "subtitle": "Experience and key milestones",
     "items": [
       {
-        "period": "2020 — 2021",
-        "role": "Learning JavaScript, Andersen course",
-        "company": "Andersen JS Course",
-        "text": "Intensive JavaScript: data structures, async, DOM, React basics. First test assignments: CRM on Vue + Firebase (diploma), a shop on React, an attention game.",
-        "tags": ["JavaScript", "React", "Vue", "Firebase"]
+        "role": "Frontend developer",
+        "text": "PWA (interview helper) in Vue: structure, pages, new features. Vuex, Vuetify, Firebase."
       },
       {
-        "period": "2021 — 2023",
-        "role": "Frontend developer (self-study)",
-        "company": "Pet projects and coursework",
-        "text": "Test assignments and study projects: a React app with a Firebase backend, an Angular 8 coursework with routing and layout. Passed Rolling Scopes School.",
-        "tags": ["React", "Angular", "TypeScript"]
+        "role": "Programmer",
+        "text": "CRM (SPA) in Angular: new features and components, unit tests. RxJS, Redux, Jasmine."
       },
       {
-        "period": "2023 — 2026",
-        "role": "Interfaces and AI tools",
-        "company": "Pet projects, open source",
-        "text": "Game localization and AI voice-over (Ren'Py, Qwen voice cloning, ~67k lines), Python automation tools, development with opencode and local LLMs.",
-        "tags": ["AI", "TTS", "Python", "Ren'Py", "opencode"]
+        "role": "Frontend developer",
+        "text": "Internal warehouse system: structure, pages, route guards, database integration. React, MongoDB, Heroku."
+      },
+      {
+        "role": "Programmer",
+        "text": "SPA \"PPRB Equity Products\": component development, feature maintenance, Agile (Scrum). React, Redux Toolkit."
+      },
+      {
+        "role": "Frontend developer",
+        "text": "SPA \"PPRB Equity Products\": microservice architecture, Cypress tests, scrum master duties. React, Redux Toolkit."
       }
-    ]
+    ],
+    "present": "present"
   },
   "projects": {
     "title": "Projects",
@@ -91,27 +92,27 @@
       },
       {
         "title": "angular-nabludenie-by",
-        "text": "Angular 8 coursework: routing, layout, data handling. Hosted on GitHub Pages.",
+        "text": "Angular 8 coursework: routing, layout, data handling. GitHub Pages.",
         "tags": ["Angular", "TypeScript", "GitHub Pages"]
       },
       {
         "title": "react-todo-list",
-        "text": "First React work: todo app with state management, published on GitHub Pages.",
+        "text": "First React work: todo app, published on GitHub Pages.",
         "tags": ["React", "JavaScript"]
       },
       {
         "title": "react_tz_2021",
-        "text": "React test assignment: integration with a REST backend, deployed to Firebase Hosting.",
+        "text": "React test assignment: REST backend integration, Firebase Hosting.",
         "tags": ["React", "REST API", "Firebase"]
       },
       {
         "title": "react_maze",
-        "text": "Test assignment: an attention training game with step-by-step maze navigation.",
+        "text": "Test assignment: an attention training game with maze navigation.",
         "tags": ["React", "Game"]
       },
       {
         "title": "The Survival of Sarah Rose",
-        "text": "Russian game translation and full AI voice-over of ~67k lines: generation tools, cataloging, audio cleanup.",
+        "text": "Russian game translation and AI voice-over of ~67k lines: generation, cataloging, audio cleanup.",
         "tags": ["Ren'Py", "Python", "AI", "TTS"]
       }
     ]
@@ -160,6 +161,50 @@
   },
   "profile": {
     "role": "Frontend Developer (React + Angular)",
-    "location": "Remote / hybrid"
+    "location": "Vitebsk, Belarus · remote"
+  },
+  "resume": {
+    "location": "Moscow · remote work",
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "education": "Education",
+    "links": "Links",
+    "languagesTitle": "Languages",
+    "summary": "Frontend developer (React, Angular, Vue) with commercial experience since 2018: fintech SPA, complex forms and tables, microservices, tests (Cypress, Jasmine), Scrum. Strict typing, Feature-Sliced Design, AI tools.",
+    "educationItems": [
+      "VSTU, Vitebsk — software engineer, information systems, 2020",
+      "VSTU, Vitebsk — process engineer, mechanical engineering, 2006",
+      "Andersen Lab — Frontend, 2020",
+      "Rolling Scopes School — Frontend JavaScript, 2019"
+    ],
+    "languages": ["Russian — native", "English — A2 (elementary)"]
+  },
+  "education": {
+    "title": "Education",
+    "subtitle": "University and courses",
+    "items": [
+      {
+        "period": "2020",
+        "degree": "Higher: software engineer",
+        "place": "VSTU, Vitebsk — software for information systems"
+      },
+      {
+        "period": "2006",
+        "degree": "Higher: process engineer",
+        "place": "VSTU, Vitebsk — mechanical engineering"
+      },
+      {
+        "period": "2020",
+        "degree": "Andersen Lab — Frontend",
+        "place": "Courses"
+      },
+      {
+        "period": "2019",
+        "degree": "Rolling Scopes School — Frontend JavaScript",
+        "place": "Courses"
+      }
+    ]
   }
 }

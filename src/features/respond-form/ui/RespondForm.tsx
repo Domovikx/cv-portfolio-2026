@@ -104,6 +104,7 @@ export const RespondForm = ({ open, onClose }: RespondFormProps) => {
               className={cn(styles.input, errors.surname && styles.inputError)}
               value={form.surname}
               onChange={setField('surname')}
+              data-testid="respond-surname"
             />
             {errors.surname ? <p className={styles.error}>{tc(errors.surname)}</p> : null}
           </div>

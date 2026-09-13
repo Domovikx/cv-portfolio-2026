@@ -18,7 +18,10 @@ export const Experience = () => {
           {experienceItems.map((item) => (
             <div key={item.roleKey} className={styles.item}>
               <Card>
-                <p className={styles.period}>{item.period}</p>
+                <p className={styles.period}>
+                  {item.period}
+                  {item.periodKey ? ` — ${tc(item.periodKey)}` : ''}
+                </p>
                 <h3 className={styles.role}>{tc(item.roleKey)}</h3>
                 <p className={styles.company}>{item.company}</p>
                 <p className={styles.text}>{tc(item.textKey)}</p>

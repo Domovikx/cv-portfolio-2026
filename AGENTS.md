@@ -4,6 +4,8 @@
 
 - **НИКОГДА не коммитить и не пушить без ЯВНОЙ просьбы пользователя.**
   Коммиты и пуш делаются только когда пользователь прямо попросил.
+- **Тесты и `npm run check` — только перед коммитом** (или когда пользователь
+  явно попросил проверить). После каждой мелкой правки их не гонять.
 - Не использовать брендовые элементы Альфа-Банка (логотип, шрифтовые знаки).
   Разрешён визуальный язык: палитра, скругления, анимации, сетка.
 - Русский язык — источник истины для контента; `locales/ru.json` и
@@ -64,7 +66,8 @@ Git: DomovikX / domovikx@gmail.com. Реальные ссылки на прое�
 
 ## PDF-резюме
 
-`src/entities/profile/model/resume.pdf` — генерируется скриптом
-`tools/make_resume_pdf.py` (fpdf2, кириллица через Arial). После правки
-контента CV перегенерируй: `python tools/make_resume_pdf.py` (нужен
-`python -m pip install fpdf2`).
+`src/entities/profile/model/resume/resume-{lang}.pdf` (ru/en/de/zh) — генерируется
+скриптом `tools/make_resume_pdf.mts` (Node + Playwright, HTML-шаблон с
+дизайн-токенами, Montserrat из @fontsource). После правки контента CV
+перегенерируй: `node tools/make_resume_pdf.mts` (или `npm run make:resume`).
+Нужен `npm i -D playwright` + `npx playwright install chromium`.
