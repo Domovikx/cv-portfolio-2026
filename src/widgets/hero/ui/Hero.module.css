@@ -71,6 +71,7 @@
 }
 
 .titleAccent {
+  display: block;
   color: var(--alfa-red);
 }
 
