@@ -128,7 +128,11 @@ const CSS = `
   .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; }
   .line { font-size: 8.6pt; color: #444; margin-bottom: 0.8mm; }
   .footer { margin-top: 1.5mm; border-top: 0.5pt solid #eee; padding-top: 2mm; text-align: center; color: #888; font-size: 7.6pt; }
-  .pagebreak { page-break-before: always; }
+  /* печать: не разрывать блоки между страницами A4 */
+  .exp, .project, .skills > div, .two-col > div, .summary, .footer { break-inside: avoid; }
+  .section-title, .section-rule, .exp-period { break-after: avoid; }
+  .exp-role, .exp-company { break-after: avoid; }
+  p, li { orphans: 3; widows: 3; }
 `
 
 const chipsHtml = (tags: string[]): string =>

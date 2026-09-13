@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next'
 
 import { useGetReposQuery } from '@/shared/api'
+import { formatRelativeTime } from '@/shared/lib'
 import { Button, Modal } from '@/shared/ui'
 
 import styles from './GithubRepos.module.css'
@@ -11,7 +12,7 @@ type GithubReposProps = {
 }
 
 export const GithubRepos = ({ open, onClose }: GithubReposProps) => {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const {
     data: repos,
     isLoading,
@@ -48,16 +49,15 @@ export const GithubRepos = ({ open, onClose }: GithubReposProps) => {
       ) : (
         <div className={styles.list}>
           {repos.map((repo) => (
-            <div key={repo.id} className={styles.repo}>
+            <a
+              key={repo.id}
+              className={styles.repo}
+              href={repo.html_url}
+              target="_blank"
+              rel="noreferrer"
+            >
               <div className={styles.repoHead}>
-                <a
-                  className={styles.repoName}
-                  href={repo.html_url}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {repo.name}
-                </a>
+                <span className={styles.repoName}>{repo.name}</span>
                 <div className={styles.repoMeta}>
                   {repo.language ? <span>{repo.language}</span> : null}
                   {repo.stargazers_count > 0 ? <span>★ {repo.stargazers_count}</span> : null}
@@ -65,7 +65,10 @@ export const GithubRepos = ({ open, onClose }: GithubReposProps) => {
                 </div>
               </div>
               {repo.description ? <p className={styles.repoDesc}>{repo.description}</p> : null}
-            </div>
+              <span className={styles.repoUpdated}>
+                {t('githubRepos.updated')} {formatRelativeTime(repo.updated_at, i18n.language)}
+              </span>
+            </a>
           ))}
         </div>
       )}

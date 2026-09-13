@@ -9,4 +9,5 @@ export const profile: Profile = {
   phone: '+375 25 988-77-66',
   telegram: 'https://t.me/Domovikx',
   github: 'https://github.com/DomovikX',
+  stackoverflow: 'https://stackoverflow.com/users/10356832/domovikx',
 }

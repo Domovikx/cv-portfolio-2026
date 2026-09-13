@@ -14,9 +14,17 @@ export const Footer = () => {
       <Container className={styles.inner}>
         <p>{t('footer.copyright')}</p>
         <p>{t('footer.madeWith')}</p>
-        <a className={styles.github} href={site.repoUrl} target="_blank" rel="noreferrer">
-          {profile.github.replace('https://', '')}
-        </a>
+        <div className={styles.links}>
+          <a className={styles.link} href={profile.github} target="_blank" rel="noreferrer">
+            github.com/DomovikX
+          </a>
+          <a className={styles.link} href={profile.stackoverflow} target="_blank" rel="noreferrer">
+            stackoverflow.com/users/10356832
+          </a>
+          <a className={styles.link} href={site.repoUrl} target="_blank" rel="noreferrer">
+            {t('footer.sourceCode')}
+          </a>
+        </div>
       </Container>
     </footer>
   )

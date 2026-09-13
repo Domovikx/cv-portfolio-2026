@@ -46,14 +46,17 @@ describe('HomePage', () => {
 
   it('renders project cards with links to GitHub', () => {
     renderHome()
-    expect(screen.getAllByRole('link', { name: 'GitHub' }).length).toBeGreaterThanOrEqual(6)
+    expect(screen.getAllByRole('link', { name: 'GitHub' }).length).toBeGreaterThanOrEqual(4)
   })
 
-  it('resume button downloads a PDF', () => {
+  it('resume buttons download a PDF', () => {
     renderHome()
-    const resumeLink = screen.getByRole('link', { name: 'Скачать резюме (PDF)' })
-    expect(resumeLink).toHaveAttribute('download')
-    expect(resumeLink).toHaveAttribute('href', expect.stringContaining('.pdf'))
+    const resumeLinks = screen.getAllByRole('link', { name: 'Скачать резюме (PDF)' })
+    expect(resumeLinks.length).toBeGreaterThanOrEqual(2)
+    for (const link of resumeLinks) {
+      expect(link).toHaveAttribute('download')
+      expect(link).toHaveAttribute('href', expect.stringContaining('.pdf'))
+    }
   })
 
   it('opens respond form modal with validation', async () => {

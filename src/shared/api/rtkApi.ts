@@ -9,6 +9,7 @@ export type GitHubRepo = {
   stargazers_count: number
   forks_count: number
   topics: string[]
+  updated_at: string
 }
 
 export type RespondPayload = {

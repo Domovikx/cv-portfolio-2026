@@ -82,38 +82,30 @@
     "present": "present"
   },
   "projects": {
-    "title": "Projects",
-    "subtitle": "Things you can touch",
+    "title": "Personal projects",
+    "subtitle": "What I do outside work",
+    "statusInProgress": "in progress",
+    "statusLegacy": "legacy",
     "items": [
       {
-        "title": "vue_crm — CRM in Vue",
-        "text": "Diploma project: auth, complex forms, tables, filters, validation, CRUD. Vuex + Vuetify + Firebase.",
-        "tags": ["Vue", "Vuex", "Vuetify", "Firebase"]
+        "title": "The Survival of Sarah Rose",
+        "text": "Full Russian localization and AI voice-over of a visual novel (Ren'Py, Steam): 68,254 lines translated, 75+ cloned voices, emotion-aware delivery in RU and EN.",
+        "tags": ["Ren'Py", "Python", "AI", "TTS"]
+      },
+      {
+        "title": "W40KRT Audio Direct Mod",
+        "text": "Russian neural voice-over mod for Warhammer 40,000: Rogue Trader: Qwen3-TTS voice clone, 21k+ lines, 23 characters. Unity Mod Manager.",
+        "tags": ["C#", "Unity", "AI", "TTS"]
       },
       {
         "title": "angular-nabludenie-by",
-        "text": "Angular 8 coursework: routing, layout, data handling. GitHub Pages.",
+        "text": "Angular 8 coursework: routing, layout, data handling. Old study code.",
         "tags": ["Angular", "TypeScript", "GitHub Pages"]
       },
       {
-        "title": "react-todo-list",
-        "text": "First React work: todo app, published on GitHub Pages.",
-        "tags": ["React", "JavaScript"]
-      },
-      {
-        "title": "react_tz_2021",
-        "text": "React test assignment: REST backend integration, Firebase Hosting.",
-        "tags": ["React", "REST API", "Firebase"]
-      },
-      {
-        "title": "react_maze",
-        "text": "Test assignment: an attention training game with maze navigation.",
-        "tags": ["React", "Game"]
-      },
-      {
-        "title": "The Survival of Sarah Rose",
-        "text": "Russian game translation and AI voice-over of ~67k lines: generation, cataloging, audio cleanup.",
-        "tags": ["Ren'Py", "Python", "AI", "TTS"]
+        "title": "vue_crm",
+        "text": "Diploma project: CRM in Vue with a Firebase backend. Ancient legacy, my first serious work.",
+        "tags": ["Vue", "Vuex", "Firebase"]
       }
     ]
   },
@@ -153,11 +145,13 @@
     "loading": "Loading repositories...",
     "empty": "Nothing here yet",
     "error": "Failed to load (probably GitHub API rate limit exceeded).",
-    "retry": "Retry"
+    "retry": "Retry",
+    "updated": "updated"
   },
   "footer": {
     "copyright": "© 2026 Ilya Ivanovsky",
-    "madeWith": "React 19 · Vite · TypeScript · Feature-Sliced Design"
+    "madeWith": "React 19 · Vite · TypeScript · Feature-Sliced Design",
+    "sourceCode": "Source code of this site"
   },
   "profile": {
     "role": "Frontend Developer (React + Angular)",

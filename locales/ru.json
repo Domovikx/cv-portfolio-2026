@@ -82,38 +82,30 @@
     "present": "настоящее время"
   },
   "projects": {
-    "title": "Проекты",
-    "subtitle": "То, что можно потрогать",
+    "title": "Личные проекты",
+    "subtitle": "Что я делаю вне работы",
+    "statusInProgress": "в процессе",
+    "statusLegacy": "легаси",
     "items": [
       {
-        "title": "vue_crm — CRM на Vue",
-        "text": "Дипломный проект: авторизация, сложные формы, таблицы, фильтры, валидация, CRUD. Vuex + Vuetify + Firebase.",
-        "tags": ["Vue", "Vuex", "Vuetify", "Firebase"]
+        "title": "The Survival of Sarah Rose",
+        "text": "Полная русская локализация и AI-озвучка визуальной новеллы (Ren'Py, Steam): 68 254 строки переведено, 75+ клонированных голосов, эмоциональная озвучка на RU и EN.",
+        "tags": ["Ren'Py", "Python", "AI", "TTS"]
+      },
+      {
+        "title": "W40KRT Audio Direct Mod",
+        "text": "Мод русской нейро-озвучки Warhammer 40,000: Rogue Trader: Qwen3-TTS voice clone, 21+ тыс. реплик, 23 персонажа. Unity Mod Manager.",
+        "tags": ["C#", "Unity", "AI", "TTS"]
       },
       {
         "title": "angular-nabludenie-by",
-        "text": "Курсовая на Angular 8: роутинг, вёрстка, работа с данными. GitHub Pages.",
+        "text": "Курсовой проект на Angular 8: роутинг, вёрстка, работа с данными. Старый учебный код.",
         "tags": ["Angular", "TypeScript", "GitHub Pages"]
       },
       {
-        "title": "react-todo-list",
-        "text": "Первая работа на React: todo-приложение, опубликовано на GitHub Pages.",
-        "tags": ["React", "JavaScript"]
-      },
-      {
-        "title": "react_tz_2021",
-        "text": "Тестовое задание на React: интеграция с REST-бэкендом, Firebase Hosting.",
-        "tags": ["React", "REST API", "Firebase"]
-      },
-      {
-        "title": "react_maze",
-        "text": "Тестовое задание: игра на развитие внимания с навигацией по лабиринту.",
-        "tags": ["React", "Game"]
-      },
-      {
-        "title": "The Survival of Sarah Rose",
-        "text": "Русский перевод игры и AI-озвучка ~67 тыс. реплик: генерация, каталогизация, чистка аудио.",
-        "tags": ["Ren'Py", "Python", "AI", "TTS"]
+        "title": "vue_crm",
+        "text": "Дипломный проект: CRM на Vue с Firebase-бэкендом. Древнее легаси, первая серьёзная работа.",
+        "tags": ["Vue", "Vuex", "Firebase"]
       }
     ]
   },
@@ -153,11 +145,13 @@
     "loading": "Загружаю репозитории...",
     "empty": "Пока пусто",
     "error": "Не удалось загрузить (возможно, превышен лимит GitHub API).",
-    "retry": "Повторить"
+    "retry": "Повторить",
+    "updated": "обновлён"
   },
   "footer": {
     "copyright": "© 2026 Илья Ивановский",
-    "madeWith": "React 19 · Vite · TypeScript · Feature-Sliced Design"
+    "madeWith": "React 19 · Vite · TypeScript · Feature-Sliced Design",
+    "sourceCode": "Исходники этого сайта"
   },
   "profile": {
     "role": "Frontend-разработчик (React + Angular)",

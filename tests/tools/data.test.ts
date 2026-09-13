@@ -29,6 +29,7 @@ describe('CV data integrity (данные ↔ переводы)', () => {
     expect(profile.fullName).toContain('Ивановский')
     expect(profile.email).toMatch(/@/)
     expect(profile.github).toMatch(/^https:\/\//)
+    expect(profile.stackoverflow).toMatch(/^https:\/\/stackoverflow\.com\//)
     for (const [lang, url] of Object.entries(resumeFiles)) {
       expect(url, `resume-${lang}`).toMatch(/\.pdf$/)
     }
@@ -50,10 +51,11 @@ describe('CV data integrity (данные ↔ переводы)', () => {
     }
   })
 
-  it('every project has repo link and translated title in all locales', () => {
+  it('every project has repo link, year, status and translated title in all locales', () => {
     for (const project of projects) {
       expect(project.repoUrl).toMatch(/^https:\/\//)
-      for (const key of [project.titleKey, project.textKey]) {
+      expect(project.year).toMatch(/^\d{4}$/)
+      for (const key of [project.titleKey, project.textKey, project.statusKey]) {
         for (const [name, locale] of Object.entries(LOCALES)) {
           expect(typeof getByPath(locale, key), `${name} missing key: ${key}`).toBe('string')
         }

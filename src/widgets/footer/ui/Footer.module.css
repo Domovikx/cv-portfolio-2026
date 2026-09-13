@@ -13,12 +13,18 @@
   color: #666;
 }
 
-.github {
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.link {
   font-weight: 600;
   color: var(--alfa-dark);
   transition: color var(--transition-fast);
 }
 
-.github:hover {
+.link:hover {
   color: var(--alfa-red);
 }

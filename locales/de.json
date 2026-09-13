@@ -82,38 +82,30 @@
     "present": "aktuell"
   },
   "projects": {
-    "title": "Projekte",
-    "subtitle": "Dinge, die man anfassen kann",
+    "title": "Persönliche Projekte",
+    "subtitle": "Was ich außerhalb der Arbeit mache",
+    "statusInProgress": "in Arbeit",
+    "statusLegacy": "Legacy",
     "items": [
       {
-        "title": "vue_crm — CRM in Vue",
-        "text": "Diplomprojekt: Auth, komplexe Formulare, Tabellen, Filter, Validierung, CRUD. Vuex + Vuetify + Firebase.",
-        "tags": ["Vue", "Vuex", "Vuetify", "Firebase"]
+        "title": "The Survival of Sarah Rose",
+        "text": "Vollständige russische Lokalisierung und KI-Synchronisation einer Visual Novel (Ren'Py, Steam): 68 254 Zeilen übersetzt, 75+ geklonte Stimmen, emotionsbasierte Synchronisation auf RU und EN.",
+        "tags": ["Ren'Py", "Python", "KI", "TTS"]
+      },
+      {
+        "title": "W40KRT Audio Direct Mod",
+        "text": "Mod für russische Neuro-Synchronisation von Warhammer 40,000: Rogue Trader: Qwen3-TTS Voice Clone, 21 Tsd.+ Zeilen, 23 Charaktere. Unity Mod Manager.",
+        "tags": ["C#", "Unity", "KI", "TTS"]
       },
       {
         "title": "angular-nabludenie-by",
-        "text": "Angular-8-Kursarbeit: Routing, Layout, Datenverarbeitung. GitHub Pages.",
+        "text": "Angular-8-Kursarbeit: Routing, Layout, Datenverarbeitung. Alter Studien-Code.",
         "tags": ["Angular", "TypeScript", "GitHub Pages"]
       },
       {
-        "title": "react-todo-list",
-        "text": "Erste React-Arbeit: Todo-App, veröffentlicht auf GitHub Pages.",
-        "tags": ["React", "JavaScript"]
-      },
-      {
-        "title": "react_tz_2021",
-        "text": "React-Testaufgabe: REST-Backend-Integration, Firebase Hosting.",
-        "tags": ["React", "REST API", "Firebase"]
-      },
-      {
-        "title": "react_maze",
-        "text": "Testaufgabe: ein Aufmerksamkeitsspiel mit Labyrinth-Navigation.",
-        "tags": ["React", "Game"]
-      },
-      {
-        "title": "The Survival of Sarah Rose",
-        "text": "Russische Spielübersetzung und KI-Synchronisation von ~67 Tsd. Zeilen: Generierung, Katalogisierung, Audio-Reinigung.",
-        "tags": ["Ren'Py", "Python", "KI", "TTS"]
+        "title": "vue_crm",
+        "text": "Diplomprojekt: CRM in Vue mit Firebase-Backend. Altes Erbe, meine erste ernsthafte Arbeit.",
+        "tags": ["Vue", "Vuex", "Firebase"]
       }
     ]
   },
@@ -153,11 +145,13 @@
     "loading": "Repositories werden geladen...",
     "empty": "Noch nichts hier",
     "error": "Laden fehlgeschlagen (wahrscheinlich GitHub-API-Limit überschritten).",
-    "retry": "Erneut versuchen"
+    "retry": "Erneut versuchen",
+    "updated": "aktualisiert"
   },
   "footer": {
     "copyright": "© 2026 Ilya Ivanovsky",
-    "madeWith": "React 19 · Vite · TypeScript · Feature-Sliced Design"
+    "madeWith": "React 19 · Vite · TypeScript · Feature-Sliced Design",
+    "sourceCode": "Quellcode dieser Website"
   },
   "profile": {
     "role": "Frontend-Entwickler (React + Angular)",

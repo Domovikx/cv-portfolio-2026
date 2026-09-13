@@ -82,38 +82,30 @@
     "present": "至今"
   },
   "projects": {
-    "title": "项目",
-    "subtitle": "可以亲手体验的东西",
+    "title": "个人项目",
+    "subtitle": "工作之余的项目",
+    "statusInProgress": "进行中",
+    "statusLegacy": "遗留项目",
     "items": [
       {
-        "title": "vue_crm — 基于 Vue 的 CRM",
-        "text": "毕业项目：认证、复杂表单、表格、筛选、校验、CRUD。Vuex + Vuetify + Firebase。",
-        "tags": ["Vue", "Vuex", "Vuetify", "Firebase"]
+        "title": "The Survival of Sarah Rose",
+        "text": "视觉小说（Ren'Py，Steam）的完整俄语本地化和 AI 配音：翻译 68,254 行，75+ 个克隆声音，RU 和 EN 的情感配音。",
+        "tags": ["Ren'Py", "Python", "AI", "TTS"]
+      },
+      {
+        "title": "W40KRT Audio Direct Mod",
+        "text": "战锤 40K：行商浪人的俄语神经配音模组：Qwen3-TTS 声音克隆，21k+ 台词，23 个角色。Unity Mod Manager。",
+        "tags": ["C#", "Unity", "AI", "TTS"]
       },
       {
         "title": "angular-nabludenie-by",
-        "text": "Angular 8 课程作业：路由、布局、数据处理。GitHub Pages。",
+        "text": "Angular 8 课程作业：路由、布局、数据处理。旧的学习代码。",
         "tags": ["Angular", "TypeScript", "GitHub Pages"]
       },
       {
-        "title": "react-todo-list",
-        "text": "第一份 React 作品：待办应用，发布在 GitHub Pages 上。",
-        "tags": ["React", "JavaScript"]
-      },
-      {
-        "title": "react_tz_2021",
-        "text": "React 测试任务：REST 后端集成，Firebase Hosting。",
-        "tags": ["React", "REST API", "Firebase"]
-      },
-      {
-        "title": "react_maze",
-        "text": "测试任务：带迷宫导航的注意力训练游戏。",
-        "tags": ["React", "Game"]
-      },
-      {
-        "title": "The Survival of Sarah Rose",
-        "text": "游戏俄语本地化和约 6.7 万句台词的 AI 配音：生成、目录管理、音频清理。",
-        "tags": ["Ren'Py", "Python", "AI", "TTS"]
+        "title": "vue_crm",
+        "text": "毕业项目：基于 Vue 和 Firebase 后端的 CRM。古老遗留代码，我的第一份正经工作。",
+        "tags": ["Vue", "Vuex", "Firebase"]
       }
     ]
   },
@@ -153,11 +145,13 @@
     "loading": "正在加载仓库...",
     "empty": "暂时为空",
     "error": "加载失败（可能超出了 GitHub API 限制）。",
-    "retry": "重试"
+    "retry": "重试",
+    "updated": "更新于"
   },
   "footer": {
     "copyright": "© 2026 伊利亚·伊万诺夫斯基",
-    "madeWith": "React 19 · Vite · TypeScript · Feature-Sliced Design"
+    "madeWith": "React 19 · Vite · TypeScript · Feature-Sliced Design",
+    "sourceCode": "本站源码"
   },
   "profile": {
     "role": "前端开发工程师 (React + Angular)",

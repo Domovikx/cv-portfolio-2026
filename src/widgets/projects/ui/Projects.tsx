@@ -3,10 +3,15 @@ import { useTranslation } from 'react-i18next'
 
 import { projects } from '@/entities/project'
 import { GithubRepos } from '@/features/github-repos'
-import { useCvTranslation } from '@/shared/lib'
+import { cn, useCvTranslation } from '@/shared/lib'
 import { Button, Card, Chip, Container, Section, SectionTitle } from '@/shared/ui'
 
 import styles from './Projects.module.css'
+
+const STATUS_CLASS: Record<string, string> = {
+  'projects.statusInProgress': styles.inProgress,
+  'projects.statusLegacy': styles.legacy,
+}
 
 export const Projects = () => {
   const { t } = useTranslation()
@@ -21,6 +26,12 @@ export const Projects = () => {
           {projects.map((project) => (
             <Card key={project.titleKey} className={styles.card}>
               <h3 className={styles.cardTitle}>{tc(project.titleKey)}</h3>
+              <div className={styles.meta}>
+                <span className={styles.year}>{project.year}</span>
+                <span className={cn(styles.status, STATUS_CLASS[project.statusKey])}>
+                  {tc(project.statusKey)}
+                </span>
+              </div>
               <p className={styles.cardText}>{tc(project.textKey)}</p>
               <div className={styles.spacer} />
               <div className={styles.tags}>

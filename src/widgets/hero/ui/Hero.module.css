@@ -96,6 +96,10 @@
   margin-top: 40px;
 }
 
+.actionBtn {
+  justify-content: center;
+}
+
 .portrait {
   display: block;
   width: 100%;
@@ -146,5 +150,14 @@
 
   .title {
     font-size: 34px;
+  }
+
+  .actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .actionBtn {
+    width: 100%;
   }
 }
