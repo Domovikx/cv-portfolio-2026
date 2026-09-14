@@ -4,7 +4,7 @@ export const STORAGE_KEYS = {
 } as const
 
 export const RESUME_FILE = {
-  prefix: 'Ivanovsky-Ilya-',
+  prefix: 'Ivanovsky-Ilya-2026-',
   ext: '.pdf',
 } as const
 
