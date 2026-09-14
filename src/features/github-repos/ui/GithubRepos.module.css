@@ -9,9 +9,9 @@
   flex-direction: column;
   gap: 4px;
   padding: 16px;
-  border: 1px solid #ececec;
+  border: 1px solid var(--line-strong);
   border-radius: var(--radius-card-sm);
-  background-color: var(--alfa-bg-gray);
+  background-color: var(--surface-alt);
   color: inherit;
   text-decoration: none;
   transition:
@@ -21,7 +21,7 @@
 
 .repo:hover {
   border-color: var(--alfa-red);
-  background-color: #eef0f3;
+  background-color: var(--surface-hover);
 }
 
 .repoHead {
@@ -34,7 +34,7 @@
 .repoName {
   font-size: 16px;
   font-weight: 700;
-  color: var(--alfa-dark);
+  color: var(--ink);
 }
 
 .repo:hover .repoName {
@@ -46,19 +46,19 @@
   flex-wrap: wrap;
   gap: 12px;
   font-size: 13px;
-  color: #666;
+  color: var(--ink-muted);
 }
 
 .repoDesc {
   font-size: 14px;
-  color: #555;
+  color: var(--ink-muted);
   line-height: 1.4;
 }
 
 .repoUpdated {
   margin-top: 4px;
   font-size: 12px;
-  color: #888;
+  color: var(--ink-faint);
 }
 
 .status {
@@ -68,13 +68,13 @@
   gap: 16px;
   padding: 32px 0;
   text-align: center;
-  color: #555;
+  color: var(--ink-muted);
 }
 
 .spinner {
   width: 28px;
   height: 28px;
-  border: 3px solid var(--alfa-bg-gray);
+  border: 3px solid var(--surface-alt);
   border-top-color: var(--alfa-red);
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
@@ -110,13 +110,13 @@
   gap: 8px;
   padding: 16px;
   border-radius: var(--radius-card-sm);
-  background-color: var(--alfa-bg-gray);
+  background-color: var(--surface-alt);
 }
 
 .skeletonLine {
   height: 12px;
   border-radius: 6px;
-  background: linear-gradient(90deg, #e8e8e8 25%, #f5f5f5 50%, #e8e8e8 75%);
+  background: linear-gradient(90deg, var(--line) 25%, var(--surface-hover) 50%, var(--line) 75%);
   background-size: 200% 100%;
   animation: shimmer 1.2s ease-in-out infinite;
 }

@@ -8,7 +8,7 @@
   overflow: hidden;
   border: none;
   border-radius: var(--radius-card);
-  background-color: var(--alfa-white);
+  background-color: var(--surface);
   box-shadow: 0 24px 64px rgba(44, 44, 44, 0.24);
   animation: slideUp 0.25s ease;
 }
@@ -18,7 +18,7 @@
   min-height: 0;
   scrollbar-gutter: stable;
   scrollbar-width: thin;
-  scrollbar-color: var(--alfa-gray) transparent;
+  scrollbar-color: var(--line) transparent;
 }
 
 .scroll::-webkit-scrollbar {
@@ -30,12 +30,12 @@
 }
 
 .scroll::-webkit-scrollbar-thumb {
-  background-color: var(--alfa-gray);
+  background-color: var(--line);
   border-radius: 999px;
 }
 
 .scroll::-webkit-scrollbar-thumb:hover {
-  background-color: #b5b5b5;
+  background-color: var(--ink-faint);
 }
 
 .modal::backdrop {
@@ -64,8 +64,8 @@
   height: 32px;
   border: none;
   border-radius: 50%;
-  background-color: var(--alfa-bg-gray);
-  color: var(--alfa-dark);
+  background-color: var(--surface-alt);
+  color: var(--ink);
   transition:
     background-color var(--transition-fast),
     color var(--transition-fast);
@@ -76,7 +76,7 @@
 }
 
 .close:hover {
-  background-color: var(--alfa-dark);
+  background-color: var(--ink);
   color: var(--alfa-white);
 }
 

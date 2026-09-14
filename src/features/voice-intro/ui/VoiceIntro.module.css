@@ -4,10 +4,10 @@
   gap: 8px;
   margin: 0;
   padding: 7px 14px 7px 8px;
-  border: 1px solid #e8e8e8;
+  border: 1px solid var(--line);
   border-radius: 999px;
-  background-color: var(--alfa-white);
-  color: var(--alfa-dark);
+  background-color: var(--surface);
+  color: var(--ink);
   font-size: 13px;
   font-weight: 600;
   line-height: 1;
@@ -42,7 +42,7 @@
 }
 
 .playing .icon {
-  background-color: var(--alfa-white);
+  background-color: var(--surface);
   color: var(--alfa-red);
 }
 
@@ -56,7 +56,7 @@
 
 .duration {
   font-weight: 400;
-  color: #888;
+  color: var(--ink-faint);
 }
 
 .playing .duration {

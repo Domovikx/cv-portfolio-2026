@@ -24,24 +24,25 @@
 }
 
 .white {
-  background-color: var(--alfa-white);
-  color: #0b0b0b;
-  border-color: #e3e3e3;
+  background-color: var(--btn-white-bg);
+  color: var(--btn-white-color);
+  border-color: var(--btn-white-border);
 }
 
 .white:hover {
-  border-color: var(--alfa-dark);
+  border-color: var(--alfa-red);
+  color: var(--btn-white-color);
 }
 
 .ghost {
   background-color: transparent;
-  color: var(--alfa-dark);
-  border-color: var(--alfa-dark);
+  color: var(--ink);
+  border-color: var(--ink);
 }
 
 .ghost:hover {
-  background-color: var(--alfa-dark);
-  color: var(--alfa-white);
+  background-color: var(--ink);
+  color: var(--surface);
 }
 
 .sizeM {

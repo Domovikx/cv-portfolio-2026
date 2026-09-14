@@ -9,6 +9,27 @@
   --alfa-bg: #f5f5f5;
   --alfa-white: #ffffff;
 
+  /* Семантические токены (тема) */
+  --surface: #ffffff;
+  --surface-alt: #f5f7f9;
+  --surface-hover: #f2f3f5;
+  --ink: #2c2c2c;
+  --ink-strong: #0b0b0b;
+  --ink-muted: #555555;
+  --ink-faint: #767676;
+  --line: #e0e0e0;
+  --line-strong: #e4e4e4;
+  --header-bg: rgba(255, 255, 255, 0.92);
+  --footer-bg: #2c2c2c;
+  --footer-text: #cfcfcf;
+  --footer-muted: #9a9a9a;
+  --btn-white-bg: #ffffff;
+  --btn-white-color: #0b0b0b;
+  --btn-white-border: var(--line);
+  --success: #2e7d32;
+  --success-bg: #e8f5e9;
+  --shadow-card: 0 12px 32px rgba(44, 44, 44, 0.08);
+
   /* Типографика */
   --font-heading: 'Montserrat', 'Segoe UI', system-ui, sans-serif;
   --font-body: 'Segoe UI', system-ui, -apple-system, sans-serif;
@@ -22,6 +43,28 @@
   --container-width: 1216px;
 
   /* Эффекты */
-  --shadow-card: 0 12px 32px rgba(44, 44, 44, 0.08);
   --transition-fast: 0.2s ease;
+}
+
+[data-theme='dark'] {
+  --surface: #1d1e21;
+  --surface-alt: #26272b;
+  --surface-hover: #2e3035;
+  --ink: #f0f1f3;
+  --ink-strong: #ffffff;
+  --ink-muted: #b6b9bf;
+  --ink-faint: #8a8d94;
+  --line: #34363c;
+  --line-strong: #3c3f45;
+  --header-bg: rgba(29, 30, 33, 0.92);
+  --footer-bg: #151618;
+  --footer-text: #d4d6da;
+  --footer-muted: #9a9da4;
+  --btn-white-bg: transparent;
+  --btn-white-color: var(--ink);
+  --btn-white-border: var(--line-strong);
+  --success: #7ee787;
+  --success-bg: rgba(46, 160, 67, 0.16);
+  --shadow-card: 0 12px 32px rgba(0, 0, 0, 0.45);
+  color-scheme: dark;
 }

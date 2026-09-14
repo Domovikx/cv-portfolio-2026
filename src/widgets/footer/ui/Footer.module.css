@@ -1,30 +1,106 @@
 .footer {
-  border-top: 1px solid #ececec;
-  padding: 32px 0;
+  padding: 48px 0 24px;
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
 }
 
-.inner {
+.top {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 16px;
-  font-size: 14px;
-  color: #666;
+  gap: 24px;
 }
 
-.links {
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--footer-text);
+}
+
+.logoMark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background-color: var(--alfa-red);
+  color: var(--alfa-white);
+  font-size: 20px;
+}
+
+.socials {
   display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
+  gap: 12px;
 }
 
-.link {
+.iconButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  color: var(--footer-text);
+  transition:
+    background-color var(--transition-fast),
+    border-color var(--transition-fast),
+    color var(--transition-fast);
+}
+
+.iconButton:hover {
+  background-color: var(--alfa-red);
+  border-color: var(--alfa-red);
+  color: var(--footer-text);
+}
+
+.iconButton:focus-visible {
+  outline: 2px solid var(--surface);
+  outline-offset: 2px;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 14px;
+  color: var(--footer-muted);
+}
+
+.sourceLink {
   font-weight: 600;
-  color: var(--alfa-dark);
+  color: var(--footer-text);
   transition: color var(--transition-fast);
 }
 
-.link:hover {
+.sourceLink:hover {
   color: var(--alfa-red);
+}
+
+.sourceLink:focus-visible {
+  outline: 2px solid var(--surface);
+  outline-offset: 2px;
+}
+
+@media (max-width: 640px) {
+  .top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bottom {
+    justify-content: center;
+    text-align: center;
+  }
 }

@@ -8,7 +8,7 @@
 }
 
 .check {
-  color: #2e7d32;
+  color: var(--success);
 }
 
 .errorIcon {

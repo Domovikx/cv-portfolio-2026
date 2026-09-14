@@ -4,10 +4,50 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      ;(function () {
+        try {
+          var t = localStorage.getItem('cv-portfolio-2026:theme')
+          if (t !== 'dark' && t !== 'light') {
+            t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+          }
+          document.documentElement.setAttribute('data-theme', t)
+        } catch (e) {}
+      })()
+    </script>
     <meta
       name="description"
       content="Frontend-разработчик (React + Angular) — CV-портфолио на React 19 + TypeScript + Vite, Feature-Sliced Design"
     />
+    <link rel="canonical" href="https://domovikx.github.io/cv-portfolio-2026/" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="https://domovikx.github.io/cv-portfolio-2026/" />
+    <meta property="og:title" content="Илья Ивановский — Frontend-разработчик (React + Angular)" />
+    <meta
+      property="og:description"
+      content="CV-портфолио: коммерческий опыт с 2018 года, React + Angular, личные проекты, резюме в PDF."
+    />
+    <meta
+      property="og:image"
+      content="https://domovikx.github.io/cv-portfolio-2026/og-portrait.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Илья Ивановский — Frontend-разработчик (React + Angular)" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Илья Ивановский",
+        "url": "https://domovikx.github.io/cv-portfolio-2026/",
+        "jobTitle": "Frontend-разработчик (React + Angular)",
+        "email": "mailto:domovikx@gmail.com",
+        "sameAs": [
+          "https://github.com/DomovikX",
+          "https://stackoverflow.com/users/10356832/domovikx",
+          "https://t.me/Domovikx"
+        ]
+      }
+    </script>
     <title>Илья Ивановский — Frontend-разработчик (React + Angular)</title>
   </head>
   <body>

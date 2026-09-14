@@ -43,7 +43,11 @@ export const Button = ({
   }
 
   return (
-    <button className={classes} {...(rest as ButtonHTMLAttributes<HTMLButtonElement>)}>
+    <button
+      className={classes}
+      {...(rest as ButtonHTMLAttributes<HTMLButtonElement>)}
+      type={(rest.type as ButtonHTMLAttributes<HTMLButtonElement>['type']) ?? 'button'}
+    >
       {children}
     </button>
   )

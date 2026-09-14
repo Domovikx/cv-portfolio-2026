@@ -17,6 +17,7 @@ export const LanguageSwitcher = () => {
           key={lang}
           type="button"
           className={cn(styles.item, current === lang && styles.active)}
+          aria-pressed={current === lang}
           data-testid={`lang-${lang}`}
           onClick={() => setLang(lang)}
         >

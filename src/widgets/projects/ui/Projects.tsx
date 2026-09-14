@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 
 import { projects } from '@/entities/project'
 import { GithubRepos } from '@/features/github-repos'
+import { SECTION_IDS } from '@/shared/config'
 import { cn, useCvTranslation } from '@/shared/lib'
 import { Button, Card, Chip, Container, Section, SectionTitle } from '@/shared/ui'
 
@@ -19,7 +20,7 @@ export const Projects = () => {
   const [reposOpen, setReposOpen] = useState(false)
 
   return (
-    <Section id="projects">
+    <Section id={SECTION_IDS.projects}>
       <Container>
         <SectionTitle title={t('projects.title')} subtitle={t('projects.subtitle')} />
         <div className={styles.grid}>

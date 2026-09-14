@@ -29,7 +29,7 @@
   margin-top: 24px;
   font-size: 18px;
   line-height: 26px;
-  color: #444;
+  color: var(--ink-muted);
 }
 
 .availability {
@@ -37,19 +37,20 @@
   align-items: center;
   gap: 8px;
   margin-top: 24px;
-  padding: 8px 14px;
+  padding: 7px 14px 9px;
   border-radius: 999px;
-  background-color: #e8f5e9;
-  color: #2e7d32;
+  background-color: var(--success-bg);
+  color: var(--success);
   font-size: 14px;
   font-weight: 600;
+  line-height: 1;
 }
 
 .dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #2e7d32;
+  background-color: var(--success);
   animation: pulse 2s infinite;
 }
 
@@ -66,12 +67,12 @@
   align-items: center;
   gap: 8px;
   padding: 14px 32px;
-  border: 1px dashed #cfcfcf;
+  border: 1px dashed var(--ink-faint);
   border-radius: var(--radius-btn);
   font-family: var(--font-heading);
   font-size: 18px;
   font-weight: 600;
-  color: #666;
+  color: var(--ink-muted);
 }
 
 @media (max-width: 768px) {

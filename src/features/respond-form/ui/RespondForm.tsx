@@ -93,8 +93,16 @@ export const RespondForm = ({ open, onClose }: RespondFormProps) => {
               className={cn(styles.input, errors.name && styles.inputError)}
               value={form.name}
               onChange={setField('name')}
+              autoComplete="name"
+              aria-required="true"
+              aria-invalid={errors.name ? true : undefined}
+              aria-describedby={errors.name ? 'respond-name-error' : undefined}
             />
-            {errors.name ? <p className={styles.error}>{tc(errors.name)}</p> : null}
+            {errors.name ? (
+              <p id="respond-name-error" className={styles.error} role="alert">
+                {tc(errors.name)}
+              </p>
+            ) : null}
           </div>
           <div className={styles.field}>
             <label className={styles.label} htmlFor="respond-surname">
@@ -106,8 +114,16 @@ export const RespondForm = ({ open, onClose }: RespondFormProps) => {
               value={form.surname}
               onChange={setField('surname')}
               data-testid="respond-surname"
+              autoComplete="name"
+              aria-required="true"
+              aria-invalid={errors.surname ? true : undefined}
+              aria-describedby={errors.surname ? 'respond-surname-error' : undefined}
             />
-            {errors.surname ? <p className={styles.error}>{tc(errors.surname)}</p> : null}
+            {errors.surname ? (
+              <p id="respond-surname-error" className={styles.error} role="alert">
+                {tc(errors.surname)}
+              </p>
+            ) : null}
           </div>
           <div className={styles.field}>
             <label className={styles.label} htmlFor="respond-email">
@@ -120,8 +136,16 @@ export const RespondForm = ({ open, onClose }: RespondFormProps) => {
               className={cn(styles.input, errors.email && styles.inputError)}
               value={form.email}
               onChange={setField('email')}
+              autoComplete="email"
+              aria-required="true"
+              aria-invalid={errors.email ? true : undefined}
+              aria-describedby={errors.email ? 'respond-email-error' : undefined}
             />
-            {errors.email ? <p className={styles.error}>{tc(errors.email)}</p> : null}
+            {errors.email ? (
+              <p id="respond-email-error" className={styles.error} role="alert">
+                {tc(errors.email)}
+              </p>
+            ) : null}
           </div>
           <div className={styles.field}>
             <label className={styles.label} htmlFor="respond-phone">
@@ -134,6 +158,7 @@ export const RespondForm = ({ open, onClose }: RespondFormProps) => {
               className={styles.input}
               value={form.phone}
               onChange={setField('phone')}
+              autoComplete="tel"
             />
           </div>
           <div className={styles.field}>
@@ -147,18 +172,30 @@ export const RespondForm = ({ open, onClose }: RespondFormProps) => {
               value={form.resumeLink}
               onChange={setField('resumeLink')}
               placeholder="https://..."
+              autoComplete="url"
+              aria-invalid={errors.resumeLink ? true : undefined}
+              aria-describedby={errors.resumeLink ? 'respond-link-error' : undefined}
             />
-            {errors.resumeLink ? <p className={styles.error}>{tc(errors.resumeLink)}</p> : null}
+            {errors.resumeLink ? (
+              <p id="respond-link-error" className={styles.error} role="alert">
+                {tc(errors.resumeLink)}
+              </p>
+            ) : null}
           </div>
           <label className={styles.consent}>
             <input
               type="checkbox"
               checked={consent}
               onChange={(event) => setConsent(event.target.checked)}
+              aria-invalid={errors.consent ? true : undefined}
             />
             <span>{t('respondForm.consent')}</span>
           </label>
-          {errors.consent ? <p className={styles.error}>{tc(errors.consent)}</p> : null}
+          {errors.consent ? (
+            <p className={styles.error} role="alert">
+              {tc(errors.consent)}
+            </p>
+          ) : null}
           {isError ? <p className={styles.error}>{t('respondForm.error')}</p> : null}
           <Button
             type="submit"

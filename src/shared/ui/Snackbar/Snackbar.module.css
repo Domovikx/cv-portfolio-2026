@@ -78,6 +78,25 @@
   background-color: var(--alfa-red-hover);
 }
 
+.close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.12);
+  color: var(--alfa-white);
+  transition: background-color var(--transition-fast);
+}
+
+.close:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
 @keyframes snackbarIn {
   from {
     transform: translate(-50%, 12px);

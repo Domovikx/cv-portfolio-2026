@@ -1,16 +1,16 @@
 .switcher {
   display: inline-flex;
   overflow: hidden;
-  border: 1px solid #e3e3e3;
+  border: 1px solid var(--line);
   border-radius: 8px;
-  background-color: var(--alfa-white);
+  background-color: var(--surface);
 }
 
 .item {
   padding: 8px 12px;
   border: none;
   background-color: transparent;
-  color: var(--alfa-dark);
+  color: var(--ink);
   font-size: 14px;
   font-weight: 700;
   transition:
@@ -23,10 +23,10 @@
 }
 
 .active {
-  background-color: var(--alfa-dark);
-  color: var(--alfa-white);
+  background-color: var(--ink);
+  color: var(--surface);
 }
 
 .active:hover {
-  color: var(--alfa-white);
+  color: var(--surface);
 }

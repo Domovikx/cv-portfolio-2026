@@ -13,7 +13,7 @@
   bottom: 8px;
   left: 6px;
   width: 2px;
-  background-color: #e3e3e3;
+  background-color: var(--line);
 }
 
 .item {
@@ -27,7 +27,7 @@
   left: -28px;
   width: 14px;
   height: 14px;
-  border: 3px solid var(--alfa-bg-gray);
+  border: 3px solid var(--surface-alt);
   border-radius: 50%;
   background-color: var(--alfa-red);
   box-shadow: 0 0 0 2px var(--alfa-red);
@@ -51,7 +51,7 @@
 .company {
   margin-top: 4px;
   font-size: 15px;
-  color: #666;
+  color: var(--ink-muted);
 }
 
 .text {
@@ -70,4 +70,5 @@
 .smallChip {
   padding: 6px 12px;
   font-size: 13px;
+  line-height: 1;
 }

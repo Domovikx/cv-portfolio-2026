@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import { profile } from '@/entities/profile'
 import { ResumeDownloadButton } from '@/features/resume-download'
 import { RespondForm } from '@/features/respond-form'
+import { SECTION_IDS } from '@/shared/config'
 import { Button, Container, Section } from '@/shared/ui'
 
 import styles from './Contacts.module.css'
@@ -13,7 +14,7 @@ export const Contacts = () => {
   const [respondOpen, setRespondOpen] = useState(false)
 
   return (
-    <Section id="contacts" variant="gray">
+    <Section id={SECTION_IDS.contacts} variant="gray">
       <Container className={styles.content}>
         <h2 className={styles.title}>{t('contacts.title')}</h2>
         <p className={styles.text}>{t('contacts.text')}</p>
