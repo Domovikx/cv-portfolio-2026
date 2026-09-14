@@ -8,7 +8,9 @@
       "contacts": "Kontakt",
       "education": "Bildung"
     },
-    "cta": "Kontakt"
+    "cta": "Kontakt",
+    "skipToContent": "Zum Inhalt springen",
+    "menu": "Menü"
   },
   "hero": {
     "greeting": "Hallo, ich bin Ilya Ivanovsky",
@@ -162,7 +164,7 @@
     "about": "Über mich",
     "skills": "Fähigkeiten",
     "experience": "Berufserfahrung",
-    "projects": "Projekte",
+    "projects": "Persönliche Projekte",
     "education": "Bildung",
     "links": "Links",
     "languagesTitle": "Sprachen",
@@ -205,5 +207,14 @@
     "success": "Lebenslauf heruntergeladen",
     "open": "Öffnen",
     "error": "Lebenslauf konnte nicht heruntergeladen werden"
+  },
+  "meta": {
+    "description": "Frontend-Entwickler (React + Angular) — CV-Portfolio: echte Erfahrung, Projekte, PDF-Lebenslauf. React 19, TypeScript, Feature-Sliced Design."
+  },
+  "voiceIntro": {
+    "sec": "Sek."
+  },
+  "theme": {
+    "toggle": "Design wechseln"
   }
 }

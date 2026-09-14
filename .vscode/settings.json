@@ -11,5 +11,16 @@
   },
   "cSpell.language": "en,ru",
   "cSpell.enabled": true,
-  "vitest.enable": true
+  "editor.minimap.enabled": false,
+  "editor.suggest.preview": true,
+  "editor.wordWrap": "on",
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": true,
+  "explorer.confirmDragAndDrop": true,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "workbench.colorCustomizations": {
+    "gitlens.trailingLineForegroundColor": "#888",
+    "tab.activeBackground": "#fff3"
+  },
+  "workbench.tree.indent": 15
 }

@@ -8,7 +8,9 @@
       "contacts": "Contacts",
       "education": "Education"
     },
-    "cta": "Contact me"
+    "cta": "Contact me",
+    "skipToContent": "Skip to content",
+    "menu": "Menu"
   },
   "hero": {
     "greeting": "Hi, I'm Ilya Ivanovsky",
@@ -162,7 +164,7 @@
     "about": "About",
     "skills": "Skills",
     "experience": "Experience",
-    "projects": "Projects",
+    "projects": "Personal projects",
     "education": "Education",
     "links": "Links",
     "languagesTitle": "Languages",
@@ -205,5 +207,14 @@
     "success": "Resume downloaded",
     "open": "Open",
     "error": "Failed to download the resume"
+  },
+  "meta": {
+    "description": "Frontend developer (React + Angular) — CV portfolio: real experience, projects, PDF resume. React 19, TypeScript, Feature-Sliced Design."
+  },
+  "voiceIntro": {
+    "sec": "s"
+  },
+  "theme": {
+    "toggle": "Toggle theme"
   }
 }

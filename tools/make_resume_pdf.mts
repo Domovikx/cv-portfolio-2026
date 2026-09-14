@@ -88,47 +88,47 @@ const CSS = `
   @page { size: A4; margin: 10mm 13mm; }
   body {
     font-family: 'Montserrat PDF', 'Segoe UI', 'Microsoft YaHei', sans-serif;
-    color: #2c2c2c; font-size: 8.3pt; line-height: 1.28;
+    color: #2c2c2c; font-size: 8.4pt; line-height: 1.34;
   }
   .page { width: 100%; }
-  .header { display: flex; justify-content: space-between; gap: 20px; margin-bottom: 3mm; }
+  .header { display: flex; justify-content: space-between; gap: 20px; margin-bottom: 4.5mm; }
   .header-main h1 { font-weight: 800; font-size: 17pt; letter-spacing: 0.5px; }
   .header-main .role { font-weight: 800; color: #ef3124; font-size: 10.5pt; margin-top: 1mm; }
   .header-main .location { color: #888; font-size: 8.6pt; margin-top: 0.8mm; }
   .header-contacts { text-align: right; font-size: 8.5pt; color: #555; line-height: 1.7; }
   .header-contacts .item { white-space: nowrap; }
   .header-contacts .label { color: #aaa; }
-  .rule { height: 3px; background: #ef3124; border-radius: 2px; margin-bottom: 2.5mm; }
+  .rule { height: 3px; background: #ef3124; border-radius: 2px; margin-bottom: 3.5mm; }
   .section-title {
     font-weight: 800; font-size: 9.2pt; text-transform: uppercase; letter-spacing: 1.5px;
-    color: #ef3124; margin-bottom: 1mm;
+    color: #ef3124; margin-bottom: 1.2mm;
   }
-  .section-rule { width: 30mm; height: 2px; background: #ef3124; border-radius: 2px; margin-bottom: 1.8mm; }
-  .section { margin-bottom: 2.2mm; }
+  .section-rule { width: 30mm; height: 2px; background: #ef3124; border-radius: 2px; margin-bottom: 2.8mm; }
+  .section { margin-bottom: 6.5mm; }
   .summary { color: #444; }
-  .skills { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5mm; }
-  .skill-group-title { font-weight: 800; font-size: 8.6pt; margin-bottom: 1mm; }
+  .skills { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; }
+  .skill-group-title { font-weight: 800; font-size: 8.6pt; margin-bottom: 1.4mm; }
   .chips { display: flex; flex-wrap: wrap; gap: 1.5mm; }
   .chip {
     display: inline-block; padding: 0.5mm 2mm; border: 0.4pt solid #e8e8e8;
     border-radius: 999px; font-size: 7.4pt; color: #444; background: #fff;
   }
-  .exp { display: flex; gap: 5mm; margin-bottom: 2.4mm; }
+  .exp { display: flex; gap: 5mm; margin-bottom: 3.2mm; }
   .exp-period { flex: 0 0 24mm; font-weight: 800; color: #ef3124; font-size: 8pt; padding-top: 0.3mm; }
   .exp-role { font-weight: 800; font-size: 9.5pt; }
   .exp-company { color: #777; font-size: 8.2pt; }
-  .exp-text { color: #444; margin-top: 0.5mm; }
+  .exp-text { color: #444; margin-top: 0.7mm; }
   .exp .chips { margin-top: 0.6mm; }
-  .projects { display: grid; grid-template-columns: 1fr 1fr; gap: 3mm; break-inside: avoid; }
+  .projects { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5mm; break-inside: avoid; }
   .project {
-    border: 0.5pt solid #ececec; border-radius: 2.5mm; padding: 2mm 2.5mm; background: #fafafa;
+    border: 0.5pt solid #ececec; border-radius: 2.5mm; padding: 2.2mm 2.6mm; background: #fafafa;
   }
   .project-title { font-weight: 800; font-size: 8.4pt; }
-  .project-text { color: #444; font-size: 8.1pt; margin-top: 0.6mm; }
+  .project-text { color: #444; font-size: 8.1pt; margin-top: 0.8mm; }
   .project-link { color: #ef3124; font-weight: 600; font-size: 7.8pt; display: block; margin-top: 0.6mm; }
-  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 6mm; }
-  .line { font-size: 8.6pt; color: #444; margin-bottom: 0.8mm; }
-  .footer { margin-top: 1.5mm; border-top: 0.5pt solid #eee; padding-top: 2mm; text-align: center; color: #888; font-size: 7.6pt; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 7mm; }
+  .line { font-size: 8.6pt; color: #444; margin-bottom: 1.1mm; }
+  .footer { margin-top: 4mm; border-top: 0.5pt solid #eee; padding-top: 2.5mm; text-align: center; color: #888; font-size: 7.6pt; }
   /* печать: не разрывать блоки между страницами A4 */
   .exp, .project, .skills > div, .two-col > div, .summary, .footer { break-inside: avoid; }
   .section-title, .section-rule, .exp-period { break-after: avoid; }

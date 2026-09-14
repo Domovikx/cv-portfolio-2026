@@ -8,7 +8,9 @@
       "contacts": "联系方式",
       "education": "教育"
     },
-    "cta": "联系我"
+    "cta": "联系我",
+    "skipToContent": "跳转到内容",
+    "menu": "菜单"
   },
   "hero": {
     "greeting": "你好，我是伊利亚·伊万诺夫斯基",
@@ -162,7 +164,7 @@
     "about": "关于我",
     "skills": "技能",
     "experience": "工作经历",
-    "projects": "项目",
+    "projects": "个人项目",
     "education": "教育",
     "links": "链接",
     "languagesTitle": "语言",
@@ -205,5 +207,14 @@
     "success": "简历已下载",
     "open": "打开",
     "error": "简历下载失败"
+  },
+  "meta": {
+    "description": "前端开发工程师（React + Angular）— CV 作品集：真实经验、项目、PDF 简历。React 19、TypeScript、Feature-Sliced Design。"
+  },
+  "voiceIntro": {
+    "sec": "秒"
+  },
+  "theme": {
+    "toggle": "切换主题"
   }
 }

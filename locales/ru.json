@@ -8,7 +8,9 @@
       "contacts": "Контакты",
       "education": "Образование"
     },
-    "cta": "Связаться"
+    "cta": "Связаться",
+    "skipToContent": "Перейти к содержимому",
+    "menu": "Меню"
   },
   "hero": {
     "greeting": "Привет, я Илья Ивановский",
@@ -162,7 +164,7 @@
     "about": "О себе",
     "skills": "Навыки",
     "experience": "Опыт работы",
-    "projects": "Проекты",
+    "projects": "Личные проекты",
     "education": "Образование",
     "links": "Ссылки",
     "languagesTitle": "Языки",
@@ -205,5 +207,14 @@
     "success": "Резюме скачано",
     "open": "Открыть",
     "error": "Не удалось скачать резюме"
+  },
+  "meta": {
+    "description": "Фронтенд-разработчик (React + Angular) — CV-портфолио: реальный опыт, проекты, резюме в PDF. React 19, TypeScript, Feature-Sliced Design."
+  },
+  "voiceIntro": {
+    "sec": "с"
+  },
+  "theme": {
+    "toggle": "Переключить тему"
   }
 }
