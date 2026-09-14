@@ -1,3 +1,5 @@
 export { DEFAULT_LANG, LANGS, i18n, setLang } from './i18n'
 export type { Lang, TranslationKey } from './i18n'
+export { RESUME_FILE, SECTION_IDS, SNACKBAR_HIDE_MS, STORAGE_KEYS } from './constants'
+export type { SectionId } from './constants'
 export { site } from './site'

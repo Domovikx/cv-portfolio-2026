@@ -10,7 +10,9 @@ export type Lang = (typeof LANGS)[number]
 
 export const DEFAULT_LANG: Lang = 'ru'
 
-const STORAGE_KEY = 'cv-portfolio-2026:lang'
+import { STORAGE_KEYS } from './constants'
+
+const STORAGE_KEY = STORAGE_KEYS.lang
 
 const getInitialLang = (): Lang => {
   const saved = typeof localStorage !== 'undefined' ? localStorage.getItem(STORAGE_KEY) : null

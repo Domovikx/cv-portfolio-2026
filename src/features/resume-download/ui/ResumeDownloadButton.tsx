@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
 import { resumeFiles } from '@/entities/profile'
+import { RESUME_FILE } from '@/shared/config'
 import type { Lang } from '@/shared/config'
 import { Button, Snackbar } from '@/shared/ui'
 import type { ButtonProps } from '@/shared/ui'
@@ -28,7 +29,7 @@ export const ResumeDownloadButton = ({
     if (status !== 'idle') return
     setStatus('loading')
     try {
-      await downloadFile(fileUrl, `Ivanovsky-Ilya-${lang}.pdf`)
+      await downloadFile(fileUrl, `${RESUME_FILE.prefix}${lang}${RESUME_FILE.ext}`)
       setStatus('done')
       setSnackbarMessage(t('resumeDownload.success'))
     } catch {
