@@ -17,7 +17,7 @@ describe('HomePage', () => {
   it('renders hero role heading', () => {
     renderHome()
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('Frontend-разработчик')
-    expect(screen.getByText('Илья Ивановский')).toBeInTheDocument()
+    expect(screen.getAllByText('Илья Ивановский').length).toBeGreaterThanOrEqual(2)
   })
 
   it('renders header nav with all section anchors', () => {
