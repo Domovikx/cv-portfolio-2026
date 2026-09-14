@@ -2,9 +2,25 @@
   position: sticky;
   top: 0;
   z-index: 50;
-  border-bottom: 1px solid #ececec;
-  background-color: rgba(255, 255, 255, 0.92);
+  border-bottom: 1px solid var(--line-strong);
+  background-color: var(--header-bg);
   backdrop-filter: blur(8px);
+}
+
+.skipLink {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 200;
+  padding: 10px 16px;
+  border-radius: 0 0 8px 0;
+  background-color: var(--alfa-red);
+  color: var(--alfa-white);
+  font-weight: 600;
+}
+
+.skipLink:focus {
+  left: 0;
 }
 
 .inner {
@@ -21,7 +37,7 @@
   font-family: var(--font-heading);
   font-size: 18px;
   font-weight: 800;
-  color: var(--alfa-dark);
+  color: var(--ink);
 }
 
 .logoMark {
@@ -45,11 +61,16 @@
 .link {
   font-size: 15px;
   font-weight: 600;
-  color: var(--alfa-dark);
+  color: var(--ink);
   transition: color var(--transition-fast);
 }
 
 .link:hover {
+  color: var(--alfa-red);
+}
+
+.linkActive,
+.linkActive:hover {
   color: var(--alfa-red);
 }
 
@@ -59,9 +80,83 @@
   gap: 16px;
 }
 
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background-color: var(--surface);
+}
+
+.burger span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  margin: 0 auto;
+  border-radius: 1px;
+  background-color: var(--ink);
+  transition:
+    transform var(--transition-fast),
+    opacity var(--transition-fast);
+}
+
+.burgerOpen span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.burgerOpen span:nth-child(2) {
+  opacity: 0;
+}
+
+.burgerOpen span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.mobileMenu {
+  display: none;
+  flex-direction: column;
+  padding: 12px 24px 20px;
+  border-top: 1px solid var(--line-strong);
+  background-color: var(--surface);
+}
+
+.mobileLink {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.mobileLink:last-child {
+  border-bottom: none;
+}
+
+.mobileLink:hover {
+  color: var(--alfa-red);
+}
+
+.mobileLinkActive,
+.mobileLinkActive:hover {
+  color: var(--alfa-red);
+}
+
 @media (max-width: 860px) {
   .nav {
     display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .mobileMenu {
+    display: flex;
   }
 }
 

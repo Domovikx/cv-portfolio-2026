@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { profile } from '@/entities/profile'
 import { ResumeDownloadButton } from '@/features/resume-download'
 import { VoiceIntro } from '@/features/voice-intro'
+import { SECTION_IDS } from '@/shared/config'
 import { Button, Chip, Container } from '@/shared/ui'
 
 import portrait from './portrait.webp'
@@ -43,12 +44,23 @@ export const Hero = () => {
               {t('hero.ctaPrimary')}
             </Button>
             <ResumeDownloadButton size="l" variant="white" className={styles.actionBtn} />
-            <Button href="#projects" variant="ghost" size="l" className={styles.actionBtn}>
+            <Button
+              href={`#${SECTION_IDS.projects}`}
+              variant="ghost"
+              size="l"
+              className={styles.actionBtn}
+            >
               {t('hero.ctaSecondary')}
             </Button>
           </div>
         </div>
-        <img className={styles.portrait} src={portrait} alt={t('hero.photoAlt')} />
+        <img
+          className={styles.portrait}
+          src={portrait}
+          alt={t('hero.photoAlt')}
+          decoding="async"
+          fetchPriority="high"
+        />
       </Container>
     </section>
   )

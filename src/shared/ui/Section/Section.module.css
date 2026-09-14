@@ -3,7 +3,7 @@
 }
 
 .gray {
-  background-color: var(--alfa-bg-gray);
+  background-color: var(--surface-alt);
 }
 
 @media (max-width: 768px) {
