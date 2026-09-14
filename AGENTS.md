@@ -71,7 +71,16 @@ Git: DomovikX / domovikx@gmail.com. Реальные ссылки на прое�
 
 `src/entities/profile/model/resume/resume-{lang}.pdf` (ru/en/de/zh) — генерируется
 скриптом `tools/make_resume_pdf.mts` (Node + Playwright, HTML-шаблон с
-дизайн-токенами, Montserrat из @fontsource). После правки контента CV
-перегенерируй: `node tools/make_resume_pdf.mts` (или `npm run make:resume`).
-Нужен `npm i -D playwright` + `npx playwright install chromium`.
-Проверка вёрстки: `python tools/check_resume_pdf.py` (pypdf + pypdfium2).
+дизайн-токенами, Montserrat из @fontsource). Нужен `npm i -D playwright` +
+`npx playwright install chromium`.
+
+**Обязательный процесс после ЛЮБОЙ правки контента CV или локалей:**
+
+1. `node tools/make_resume_pdf.mts` — перегенерировать все 4 PDF
+2. `python tools/check_resume_pdf.py` — проверка вёрстки (2 страницы, отступы)
+   И свежести контента: если PDF отстал от локалей — скрипт упадёт с кодом 1
+3. Если правил полное имя в PDF (имя по языкам в `FULL_NAME_BY_LANG`) —
+   синхронизируй сниппеты в `CONTENT_SNIPPETS` чекера
+4. При изменении даты генерации — обнови `RESUME_FILE.prefix`
+   в `src/shared/config/constants.ts` (имя скачиваемого файла, иначе в Downloads
+   будет лежать старый файл с тем же именем)

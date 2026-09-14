@@ -19,7 +19,38 @@ SECTION_TITLES = {
     'zh': ['关于我', '技能', '工作经历', '项目', '教育'],
 }
 
+# Содержимое, которое ОБЯЗАНО быть в PDF, чтобы не разъехалось с контентом
+# сайта (локали/entities). При правке контента — перегенерируй PDF:
+# node tools/make_resume_pdf.mts, иначе эта проверка упадёт.
+CONTENT_SNIPPETS = {
+    'ru': [
+        'Ивановский Илья Петрович',
+        '2026',
+        'ITFB Group',
+        'фанфики по Гарри Поттеру',
+        'настольные ролевые игры',
+    ],
+    'en': [
+        'Ilya Ivanovsky',
+        'ITFB Group',
+        'Harry Potter fanfiction',
+        'tabletop role-playing games',
+    ],
+    'de': [
+        'Ilya Ivanovsky',
+        'ITFB Group',
+        'Harry-Potter-Fanfiction',
+    ],
+    'zh': [
+        '伊利亚·伊万诺夫斯基',
+        'ITFB Group',
+        '哈利·波特同人作品',
+    ],
+}
+
 LANGS = sys.argv[1:] or ['ru', 'en', 'de', 'zh']
+
+fails = 0
 
 for lang in LANGS:
     path = f'{RESUME_DIR}/resume-{lang}.pdf'
@@ -27,8 +58,10 @@ for lang in LANGS:
     pdf = pdfium.PdfDocument(path)
     print(f'=== {lang}: {len(reader.pages)} страниц ===')
 
+    full_text = ''
     for i, page in enumerate(reader.pages):
         text = page.extract_text() or ''
+        full_text += text
         clean = ' '.join(text.split())
 
         # отступ сверху: рендер и поиск первого не-белого ряда пикселей
@@ -57,6 +90,23 @@ for lang in LANGS:
                 found.append(title)
         print(f'      секции: {", ".join(found) or "-"}')
 
+    # свежесть контента: PDF не должен отставать от локалей/entities
+    # (буквы в PDF могут быть разрежены пробелами — нормализуем оба текста)
+    norm_full = re.sub(r'\s+', '', full_text)
+    missing = []
+    for snippet in CONTENT_SNIPPETS.get(lang, []):
+        if re.sub(r'\s+', '', snippet) not in norm_full:
+            missing.append(snippet)
+    if missing:
+        fails += 1
+        print(f'  !! ПРОБЛЕМА: PDF устарел — не содержит: {", ".join(missing)}')
+        print('      Перегенерируй: node tools/make_resume_pdf.mts')
+    else:
+        print('  контент свежий: все ключевые фрагменты на месте OK')
+
     pdf.close()
 
-print('\nГотово. Ожидаемо: 2 страницы, обе с отступом ~28px, разрывы по границам секций.')
+print('\nГотово. Ожидаемо: 2 страницы, отступы ~28px, свежий контент.')
+if fails:
+    print(f'!! НАЙДЕНО ПРОБЛЕМ: {fails} — перегенерируй PDF (node tools/make_resume_pdf.mts)')
+    sys.exit(1)

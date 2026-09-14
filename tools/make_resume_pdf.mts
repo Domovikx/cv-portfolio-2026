@@ -17,6 +17,14 @@ import { skillGroups } from '../src/entities/skill/model/skills.ts'
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..')
 const LANGS = ['ru', 'en', 'de', 'zh'] as const
 
+// Имя в PDF по языку: кириллица для ru, латиница/транслит для остальных
+const FULL_NAME_BY_LANG: Record<(typeof LANGS)[number], string> = {
+  ru: profile.fullName,
+  en: 'Ilya Ivanovsky',
+  de: 'Ilya Ivanovsky',
+  zh: '伊利亚·伊万诺夫斯基',
+}
+
 const locales = Object.fromEntries(
   LANGS.map((lang) => [
     lang,
@@ -198,7 +206,7 @@ const buildHtml = (lang: string): string => {
   <div class="page">
     <div class="header">
       <div class="header-main">
-        <h1>${escapeHtml(profile.fullName)}</h1>
+        <h1>${escapeHtml(FULL_NAME_BY_LANG[lang])}</h1>
         <div class="role">${escapeHtml(role)}</div>
         <div class="location">${escapeHtml(location)}</div>
       </div>
