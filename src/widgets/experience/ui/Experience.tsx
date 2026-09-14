@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next'
 
 import { experienceItems } from '@/entities/experience'
+import { SECTION_IDS } from '@/shared/config'
 import { useCvTranslation } from '@/shared/lib'
 import { Card, Chip, Container, Section, SectionTitle } from '@/shared/ui'
 
@@ -11,7 +12,7 @@ export const Experience = () => {
   const tc = useCvTranslation()
 
   return (
-    <Section id="experience" variant="gray">
+    <Section id={SECTION_IDS.experience} variant="gray">
       <Container>
         <SectionTitle title={t('experience.title')} subtitle={t('experience.subtitle')} />
         <div className={styles.timeline}>

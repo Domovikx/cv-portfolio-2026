@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 
+import { SECTION_IDS } from '@/shared/config'
 import { Card, Container, Section, SectionTitle } from '@/shared/ui'
 
 import styles from './Education.module.css'
@@ -15,7 +16,7 @@ export const Education = () => {
   const items = t('education.items', { returnObjects: true }) as unknown as EducationItem[]
 
   return (
-    <Section id="education" variant="gray">
+    <Section id={SECTION_IDS.education} variant="gray">
       <Container>
         <SectionTitle title={t('education.title')} subtitle={t('education.subtitle')} />
         <div className={styles.grid}>

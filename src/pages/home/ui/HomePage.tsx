@@ -12,7 +12,7 @@ export const HomePage = () => {
   return (
     <>
       <Header />
-      <main>
+      <main id="main">
         <Hero />
         <About />
         <Stack />

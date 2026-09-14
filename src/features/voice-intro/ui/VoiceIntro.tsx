@@ -57,6 +57,7 @@ export const VoiceIntro = () => {
       <audio
         ref={audioRef}
         src={AUDIO[lang] ?? AUDIO.ru}
+        preload="none"
         onEnded={handleEnded}
         onLoadedMetadata={(event) => setDuration(Math.round(event.currentTarget.duration))}
       />
@@ -77,7 +78,9 @@ export const VoiceIntro = () => {
           <span className={styles.separator} aria-hidden="true">
             ·
           </span>
-          <span className={styles.duration}>{duration} с</span>
+          <span className={styles.duration}>
+            {duration} {t('voiceIntro.sec')}
+          </span>
         </>
       ) : null}
     </button>

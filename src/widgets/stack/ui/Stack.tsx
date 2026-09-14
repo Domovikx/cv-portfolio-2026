@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next'
 
 import { skillGroups } from '@/entities/skill'
+import { SECTION_IDS } from '@/shared/config'
 import { useCvTranslation } from '@/shared/lib'
 import { Card, Chip, Container, Section, SectionTitle } from '@/shared/ui'
 
@@ -11,7 +12,7 @@ export const Stack = () => {
   const tc = useCvTranslation()
 
   return (
-    <Section id="stack">
+    <Section id={SECTION_IDS.stack}>
       <Container>
         <SectionTitle title={t('stack.title')} subtitle={t('stack.subtitle')} />
         <div className={styles.grid}>
