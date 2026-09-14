@@ -60,6 +60,7 @@ export const Projects = () => {
             </Card>
           ))}
         </div>
+        <p className={styles.hobby}>{t('projects.hobby')}</p>
         <div className={styles.liveBlock}>
           <Button variant="ghost" onClick={() => setReposOpen(true)}>
             {t('githubRepos.cta')}

@@ -120,6 +120,7 @@ const CSS = `
   .exp-text { color: #444; margin-top: 0.7mm; }
   .exp .chips { margin-top: 0.6mm; }
   .projects { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5mm; break-inside: avoid; }
+  .hobby { margin-top: 2.5mm; padding-top: 2mm; border-top: 0.5pt solid #e4e4e4; color: #666; font-size: 7.6pt; line-height: 1.45; }
   .project {
     border: 0.5pt solid #ececec; border-radius: 2.5mm; padding: 2.2mm 2.6mm; background: #fafafa;
   }
@@ -235,6 +236,7 @@ const buildHtml = (lang: string): string => {
       <div class="section-title">${escapeHtml(t(lang, 'resume.projects'))}</div>
       <div class="section-rule"></div>
       <div class="projects">${projectsHtml}</div>
+      <div class="hobby">${escapeHtml(t(lang, 'projects.hobby'))}</div>
     </div>
 
     <div class="section">

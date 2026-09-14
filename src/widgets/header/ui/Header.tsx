@@ -72,8 +72,24 @@ export const Header = () => {
         <div className={styles.actions}>
           <ThemeToggle />
           <LanguageSwitcher />
-          <Button href={profile.telegram} target="_blank" rel="noreferrer">
-            {t('header.cta')}
+          <Button
+            href={profile.telegram}
+            target="_blank"
+            rel="noreferrer"
+            className={styles.cta}
+            aria-label={t('header.cta')}
+          >
+            <svg
+              className={styles.ctaIcon}
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path d="M2.01 21 23 12 2.01 3 2 10l15 2-15 2z" />
+            </svg>
+            <span className={styles.ctaText}>{t('header.cta')}</span>
           </Button>
           <button
             type="button"

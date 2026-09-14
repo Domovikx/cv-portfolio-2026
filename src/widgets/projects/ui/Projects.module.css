@@ -102,6 +102,15 @@
   flex-grow: 1;
 }
 
+.hobby {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--ink-muted);
+}
+
 .liveBlock {
   display: flex;
   justify-content: center;
